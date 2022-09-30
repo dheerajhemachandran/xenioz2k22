@@ -7,7 +7,6 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
-;
 
 
 const MainContainer = styled.div`
@@ -50,7 +49,7 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
 top: 40%;
-left: calc(2rem + 2vw);
+left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
@@ -72,11 +71,7 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
 `
-const SKILLS = styled(NavLink)`
-color: ${props => props.theme.text};
-text-decoration: none;
-z-index:1;
-`
+
 
 const rotate = keyframes`
 from{
@@ -94,6 +89,7 @@ left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
+color:#4B0150;
 background-color: transparent;
 cursor: pointer;
 
@@ -104,7 +100,7 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
+    animation: ${rotate} infinite 4.5s linear;
 }
 
 &>:last-child{
@@ -116,10 +112,10 @@ transition: all 1s ease;
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
-background-color: #000;
+background-color: #4B0150;
 bottom: 0;
-right: 50%;
-width: ${props => props.click ? '50%' : '0%'};
+right: 30%;
+width: ${props => props.click ? '80%' : '0%'};
 height: ${props => props.click ? '100%' : '0%'};
 z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
@@ -141,11 +137,11 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
+                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} />
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact to="/Schedule">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -159,7 +155,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    About
+                    Schedule
                 </motion.h2>
             </Contact>
             <Tevent to="/Technical-event">
@@ -195,7 +191,7 @@ const Main = () => {
                 </motion.h2>
             </WORK>
             <BottomBar>
-            <ABOUT to="/about" click={+click}>
+            <ABOUT to="/Contact" click={+click}>
                 <motion.h2
                 initial={{
                     y:200,
@@ -208,25 +204,10 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    FAQ
+                    Contact
                 </motion.h2>
             </ABOUT>
-            <SKILLS to="/skills">
-                <motion.h2
-                initial={{
-                    y:200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                 whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    Contact us
-                </motion.h2>
-            </SKILLS>
+            
 
             </BottomBar>
 

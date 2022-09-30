@@ -10,7 +10,6 @@ import AboutPage from './components/AboutPage';
 import WorkPage from './components/WorkPage';
 import MySkillsPage from './components/MySkillsPage';
 import { AnimatePresence } from "framer-motion";
-import SoundBar from "./subComponents/SoundBar";
 
 
 function App() {
@@ -23,16 +22,15 @@ function App() {
 
     <ThemeProvider theme={lightTheme}>
 
-    <SoundBar />
 
 {/* For framer-motion animation on page change! */}
 <AnimatePresence exitBeforeEnter>
 <Switch  location={location} key={location.pathname}>
       <Route exact path="/" component={Main}/>
-      <Route exact path="/about" component={AboutPage}/>
+      <Route exact path="/schedule" component={AboutPage}/>
       <Route exact path="/Technical-event" component={WorkPage}/>
       <Route exact path="/Nontechnical-events" component={WorkPage}/>
-      <Route exact path="/skills" component={MySkillsPage}/>
+      <Route exact path="/Contact" component={MySkillsPage}/>
 
     </Switch>
 </AnimatePresence>
