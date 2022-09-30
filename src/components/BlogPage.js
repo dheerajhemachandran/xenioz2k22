@@ -44,9 +44,10 @@ grid-gap: calc(1rem + 2vw);
 // Framer-motion config
 const container = {
 
-    hidden: {opacity:0},
+    hidden: {opacity:0,x:200},
     show: {
       opacity:1,
+      x:0,
   
       transition:{
         staggerChildren: 0.5,

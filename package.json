@@ -1,5 +1,6 @@
 {
   "name": "react-portfolio-starter-code-files",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,16 +11,18 @@
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-particles-js": "^3.5.3",
     "react-router-dom": "^5.2.0",
+    "react-tsparticles": "^2.3.2",
     "styled-components": "^5.3.0",
-    "tsparticles": "^1.31.1",
+    "tsparticles": "^1.43.1",
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
