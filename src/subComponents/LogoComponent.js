@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
-import logo from '../assets/Images/logo.png'
+import logo from '../assets/Images/logoshrt.png'
 
 
 
@@ -12,7 +12,7 @@ font-family: 'Pacifico',cursive;
 
 position: fixed;
 left:2rem;
-top:-1rem;
+top:0rem;
 z-index:3;
 `
 
@@ -20,7 +20,7 @@ const LogoComponent = (props) => {
     return (
         <Logo color={props.theme}>
           <div className="">
-          <img src={logo} height="200px" width="200px"  alt="xenioz" /></div>
+          <img src={logo} height="100px" width="100px"  alt="xenioz" /></div>
         </Logo>
     )
 }
