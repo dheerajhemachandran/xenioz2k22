@@ -69,6 +69,7 @@ justify-content: space-evenly;
 const ABOUT = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
+padding-bottom:3rem;
 z-index:1;
 `
 
