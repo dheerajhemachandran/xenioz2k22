@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 import {motion} from 'framer-motion';
-
+import { useLocation } from 'react-router-dom';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
@@ -62,8 +62,8 @@ const WorkPage = () => {
 
     const ref = useRef(null);
     const yinyang = useRef(null);
-
-
+    const loc=useLocation();
+    const path=loc.pathname
 
     useEffect(() => {
         let element = ref.current;
@@ -95,10 +95,13 @@ const WorkPage = () => {
 <PowerButton />
 
      <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
-         {
-            Work.map( d => 
+         {path==="/Nontechnical-events"?
+            Work[0].map( d => 
             <Card key={d.id} data={d} />
-            )
+            ):
+            Work[1].map( d => 
+              <Card key={d.id} data={d} />
+              )
          }
      </Main>
 <Rotate ref={yinyang}>

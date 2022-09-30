@@ -162,7 +162,7 @@ const Main = () => {
                     About
                 </motion.h2>
             </Contact>
-            <Tevent to="/blog">
+            <Tevent to="/Technical-event">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -178,7 +178,7 @@ const Main = () => {
                 Technical
                 </motion.h2>
             </Tevent>
-            <WORK to="/work" click={+click}>
+            <WORK to="/Nontechnical-events" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
