@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
-
+import Countdown from 'react-countdown';
 
 const Box = styled(motion.div)`
 
@@ -71,6 +71,16 @@ justify-content: space-evenly;
 `
 
 const Intro = () => {
+
+    const renderer = ({ days,hours, minutes, seconds, completed }) => {
+        if (completed) {
+          // Render a completed state
+          return <>over</>;
+        } else {
+          // Render a countdown
+          return <span>{days}d :{hours}h :{minutes}m :{seconds}s </span>;
+        }
+      };
     return (
         <Box
         initial={{height:0}}
@@ -79,9 +89,10 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <h1>Hi,</h1>
-                    <h3>I'm CodeBucks.</h3>
-                    <h6>I design and Code simple yet beautiful websites.</h6>
+                    <h1>Xenioz 2k12</h1>
+                    <h4>National Level Symposium</h4>
+                    <h6>0n 17th October 2022</h6>
+                    <h3><Countdown date={Date.now() + 1382400000} renderer={renderer} /></h3>
                 </Text>
             </SubBox>
             <SubBox>

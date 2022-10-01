@@ -67,9 +67,15 @@ justify-content: space-evenly;
 `
 
 const ABOUT = styled(NavLink)`
-color: ${props => props.click ? props.theme.body : props.theme.text};
+color: ${props => props.click ? props.theme.text : props.theme.body};
+background-color:${props => props.click ? props.theme.body : props.theme.text};
+border-radius:5%;
+display:flex;
+justify-content: center;
+align-items: center;
+padding:.7rem 1rem;
 text-decoration: none;
-padding-bottom:3rem;
+margin-bottom:3rem;
 z-index:1;
 `
 
@@ -85,7 +91,7 @@ to{
 
 const Center = styled.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
+top: ${props => props.click ? '85%' :'60%'  };
 left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
@@ -105,9 +111,32 @@ transition: all 1s ease;
 }
 
 &>:last-child{
-    display: ${props => props.click ? 'none' :'inline-block'  };
-    padding-top: 1rem;
+    padding-top: 0rem;
 }
+`
+
+const Title = styled.div`
+position: absolute;
+top: 30%  ;
+left: 15%  ;
+width:70%;
+border: none;
+font-size:2vw;
+@media (min-width: 768px) {
+    font-size: 1.3vw;
+    top:20%;
+  }
+outline: none;
+color:${props => props.click ? '#fff' : '#4B0150'};
+text-align:center;
+background-color: transparent;
+display: flex;
+flex-direction: column;
+gap:1.5vh;
+justify-content: center;
+align-items: center;
+transition: all 1s ease;
+
 `
 
 const DarkDiv = styled.div`
@@ -136,10 +165,16 @@ const Main = () => {
             <PowerButton />
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
-           
+            <Title click={click}>
+                <h1>R.M.K College of Engineering and Technology</h1>
+                <h4>(An Autonomous Colllege)</h4>
+                <h3>Department of Computer Science and Engineering</h3>
+                <p>presents...../</p>
+            </Title>
+                
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} />
-                <span>click here</span>
+                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 100} height={click ? 120 : 100} />
+                <span>{click?"back":"click to view"}</span>
             </Center>
 
             <Contact to="/Schedule">
@@ -205,7 +240,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Contact
+                    Register
                 </motion.h2>
             </ABOUT>
             
