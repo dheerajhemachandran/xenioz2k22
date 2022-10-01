@@ -11,7 +11,7 @@ export const Work = [[
         `Maximum Time Limit for performing the Ad is 5 minutes`,
         `Content, spontaneity and topicality, coordination, the attraction of the advertisement, humor, and stage presence are among the evaluation factors
         `],
-        link:"https://agency-website-eta.vercel.app/",
+        link:"https://forms.gle/C8hUL9hx1BTxvUfu5",
         github:"https://github.com/codebucks27/Agency-website"
     },
     {
@@ -24,7 +24,7 @@ export const Work = [[
         `The participants can have the meme templates ready. But the content must be created on the spot`,
         `Participants are requested to bring their own laptops`],
         
-        link:"http://react-job-listing-website.codebucks27.vercel.app/",
+        link:"https://forms.gle/i6YEySM5pcZJNQas5",
         github:"https://github.com/codebucks27/react-job-listing-website"
         
     },
@@ -37,7 +37,7 @@ export const Work = [[
         `Priority will be given(who raises the hand first representing their team)`,
         `Each level contains 3 teams with 2 participants in a team`],
         
-        link:"http://devto-clone-codebucks27.vercel.app/",
+        link:" https://forms.gle/1vTEGYSrNkqmxvSM6",
         github:"https://github.com/codebucks27/devto-clone"
     },
     {
@@ -51,7 +51,7 @@ export const Work = [[
         `Cube will be provided
         `],
         
-        link:"https://react-sidebar.vercel.app/",
+        link:" https://forms.gle/So4Fv16xSb1JTFNKA",
         github:"https://github.com/codebucks27/react-sidebar"
        
     }
@@ -71,7 +71,7 @@ export const Work = [[
         
         `],
         
-        link:"https://agency-website-eta.vercel.app/",
+        link:" https://forms.gle/2vS8FtyJiAjfEQC99",
         github:"https://github.com/codebucks27/Agency-website"
     },
     {
@@ -86,7 +86,7 @@ export const Work = [[
         `They must upload their presentation in order to shortlist candidates for the presentation.
         `],
         
-        link:"http://react-job-listing-website.codebucks27.vercel.app/",
+        link:"https://forms.gle/993uZzXELierxKAbA",
         github:"https://github.com/codebucks27/react-job-listing-website"
         
     },
@@ -101,7 +101,7 @@ export const Work = [[
         `Winners will be chosen based on the number of test cases that passed and the amount of time needed
         `],
         
-        link:"http://devto-clone-codebucks27.vercel.app/",
+        link:"  https://forms.gle/HNeBcJ7xtFKyKLHS6",
         github:"https://github.com/codebucks27/devto-clone"
     },
     {
@@ -116,7 +116,7 @@ export const Work = [[
         `Winners will be validated by the amount of similarity the team is able to produce from the provided design.
         `],
         
-        link:"https://react-sidebar.vercel.app/",
+        link:"https://forms.gle/qpSkseS7tFz6oYGJ7",
         github:"https://github.com/codebucks27/react-sidebar"
        
     }

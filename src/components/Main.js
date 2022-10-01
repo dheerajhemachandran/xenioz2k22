@@ -29,7 +29,7 @@ const Container = styled.div`
 const Contact = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
-top: 2rem;
+top: 4rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
@@ -40,7 +40,7 @@ background-color:${props => props.click ? props.theme.body : props.theme.text};
 
 padding:.7rem 1rem;
 position: absolute;
-top: 50%;
+top: 46%;
 right: -1rem;
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
@@ -103,7 +103,7 @@ justify-content: center;
 align-items: center;
 padding:.7rem 1rem;
 text-decoration: none;
-margin-bottom:3rem;
+margin-bottom:rem;
 z-index:1;
 animation:ping 1.5s ease-out infinite;
 
