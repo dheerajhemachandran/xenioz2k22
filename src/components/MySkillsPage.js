@@ -14,7 +14,7 @@ import BigTitle from '../subComponents/BigTitlte'
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:100vh;
+height:150vh;
 position: relative;
 display: flex;
 justify-content: space-evenly;
@@ -29,7 +29,8 @@ color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
 padding: 2rem;
 width: 30vw;
-height: 60vh;
+margin:3rem;
+height: fit-content;
 z-index:3;
 line-height: 1.5;
 cursor: pointer;
@@ -94,32 +95,36 @@ const MySkillsPage = () => {
 <ParticleComponent theme='light' />
             <Main>
 <Title>
-    <Design width={40} height={40} /> Designer
+     venue
 </Title>
 <Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
-</Description>
-<Description>
-<strong>I like to Design</strong>
-<ul>
-    <li>
-        Web Design
-    </li>
-    <li>
-        Mobile Apps
-    </li>
-</ul>
-</Description>
-<Description>
-<strong>Tools</strong>
-<ul>
-    <li>
-       Figma
-    </li>
-    
-</ul>
+R.M.K.College of Engineering and Technology<br />
+R.S.M. Nagar,<br />
+Puduvoyal, Tiruvallur District,<br />
+Tamil Nadu, Pin code: 601 206.
 </Description>
 
+<Title>
+Staff Coordinator
+</Title>
+<Description>
+Mrs.Indra Priyadharshini<br/>
+(Assistant Professor)<br/>
+Dept. of Computer Science and Engineering<br/>
+Phone: 044-67900630<br/>
+E-mail : indracse@rmkcet.ac.in<br/>
+</Description>
+<Title>
+Student Coordinators
+</Title>
+<Description>
+President<br/>
+(M.Harish Kumar)<br/>
+mail<br/><br/>
+Secretary<br/>
+(Dincy)<br/>
+mail<br/><br/>
+</Description>
             </Main>
             
 

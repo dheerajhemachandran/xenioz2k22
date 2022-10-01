@@ -13,7 +13,7 @@ import astronaut from '../assets/Images/spaceman.png'
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:100vh;
+height:200vh;
 position: relative;
 overflow: hidden;
 `
@@ -39,22 +39,38 @@ const Main =  styled.div`
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+  height: fit-content;
   z-index: 3;
   line-height: 1.5;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction:column;
   font-size: calc(0.6rem + 1vw);
  backdrop-filter: blur(4px);
   
   position: absolute;
   left: calc(5rem + 5vw);
   top: 10rem;
-  font-family: 'Ubuntu Mono', monospace;
-  font-style: italic;
 `
+const People=styled.div`
+display:flex;
+flex-direction:row;
 
+justify-content:center;
+gap:4rem;`
+
+const Person=styled.div`
+display:flex;
+flex-direction:column;`
+
+const Title=styled.div`
+display:flex;
+margin-top:4rem;
+justify-content:center;`
+
+const Description=styled.div`
+display:flex;
+padding:3rem 1rem;
+justify-content:center`
 
 
 
@@ -72,18 +88,44 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        <ul>
-        <li>event</li>
-        <li>event</li>
-        <li>event</li>
-        <li>event</li>
-        <li>event</li>
-        <li>event</li>
-        <li>event</li>
-        </ul> 
+            <Title>R.M.K College of Engineering and Technology</Title>
+            <People>
+                <Person>
+                    <h3>principle</h3>
+                    <h4>name</h4>
+                    <img src="" height="50px" width="50px" alt="" />
+                </Person>
+                <Person>
+                    <h3>vice-principle</h3>
+                    <h4>name</h4>
+                    <img src="" height="50px" width="50px" alt="" />
+                </Person>
+            </People>
+            <Description>R.M.K College of Engineering and Technology (RMKCET) is situated at Puduvoyal,Gummidipoondi Taluk, Tiruvallur District,Tamilnadu. This college is affiliated to Anna University and is promoted by Lakshmikanthammal Educational Trust established in the year 1995 to render philanthropic and educational service to people living in rural areas bordering Tamilnadu and Andhra Pradesh. The lush green environment, the expansive buildings, the highly equipped laboratories with state of the art equipments and the unparalleled discipline of the students stand out as shining samples of management. This college started in the academic year 2008-09, secured Anna University 2nd rank in the very first semester and 1st rank in the very second semester. RMKCET is ranked 16th in Top 100 Private Engineering Colleges in The Higher Education Review Survey 2016 for Placements. Also Ranked 4th in Emerging Engineering Colleges in the Higher Education Review Survey 2016. Recently RMKCET Received the Bharatiya Vidya Bhavan National Award for Best Engineering College having Best Overall Performance for the year 2015 from ISTE, New Delhi.
+
+</Description>
+
+            <Title>rmkcet</Title>
+            <People>
+                <Person>
+                    <h3>principle</h3>
+
+                    <h4>name</h4>
+                    <img src="" height="50px" width="50px" alt="" />
+                </Person>
+                <Person>
+                    <h3>vice-principle</h3>
+
+                    <h4>name</h4>
+                    <img src="" height="50px" width="50px" alt="" />
+                </Person>
+            </People>
+            <Description>des</Description>
+
+        
         </Main>
 
-        <BigTitle text="SCHEDULE" top="10%" left="5%" />
+        <BigTitle text="RMKCET" top="10%" left="5%" />
 
 
         </Box>

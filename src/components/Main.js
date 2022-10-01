@@ -11,7 +11,7 @@ import Intro from './Intro'
 
 const MainContainer = styled.div`
 background: ${props => props.theme.body};
-width: 100vw;
+width: 100%;
 height: 100vh;
 overflow:hidden;
 
@@ -24,7 +24,6 @@ h2,h3,h4,h5,h6{
 `
 
 const Container = styled.div`
-padding: 2rem;
 `
 
 const Contact = styled(NavLink)`
@@ -36,23 +35,52 @@ text-decoration: none;
 z-index:1;
 `
 const Tevent = styled(NavLink)`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.text : props.theme.body};
+background-color:${props => props.click ? props.theme.body : props.theme.text};
+
+padding:.7rem 1rem;
 position: absolute;
 top: 50%;
-right: calc(1rem + 2vw);
+right: -1rem;
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;
+
+animation:show 3s;
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
 `
 const WORK = styled(NavLink)`
-color: ${props => props.click ? props.theme.body : props.theme.text};
+color: ${props => props.click ? props.theme.text : props.theme.body};
+border-radius:5px;
+background-color:${props => props.click ? props.theme.body : props.theme.text};
 
+padding:.7rem 1rem;
 position: absolute;
 top: 40%;
-left: calc(1rem + 2vw);
+left: 1rem;
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
+animation:show 3s;
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
 `
 
 const BottomBar = styled.div`
@@ -69,7 +97,7 @@ justify-content: space-evenly;
 const ABOUT = styled(NavLink)`
 color: ${props => props.click ? props.theme.text : props.theme.body};
 background-color:${props => props.click ? props.theme.body : props.theme.text};
-border-radius:5%;
+border-radius:5px;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -77,6 +105,29 @@ padding:.7rem 1rem;
 text-decoration: none;
 margin-bottom:3rem;
 z-index:1;
+animation:show 3s;
+animation:ping 1.5s ease-out infinite;
+
+@keyframes ping{
+    0% {
+        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+    50% {
+        border: 10px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+    100% {
+        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+}
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
 `
 
 
@@ -168,7 +219,7 @@ const Main = () => {
                 <h1>R.M.K College of Engineering and Technology</h1>
                 <h4>(An Autonomous Institution)</h4>
                 <h3>Department of Computer Science and Engineering</h3>
-                <p>presents...../</p>
+                <h1>Xenioz</h1>
             </Title>
                 
             <Center click={click}>
@@ -176,7 +227,7 @@ const Main = () => {
                 <span>{click?"back":"click to view"}</span>
             </Center>
 
-            <Contact to="/Schedule">
+            <Contact to="/About">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -190,7 +241,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Schedule
+                    About
                 </motion.h2>
             </Contact>
             <Tevent to="/Technical-event">
@@ -242,22 +293,7 @@ const Main = () => {
                     Contact
                 </motion.h2>
             </ABOUT>
-            <ABOUT to="/Contact" click={+click}>
-                <motion.h2
-                initial={{
-                    y:200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                 whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                >
-                    About
-                </motion.h2>
-            </ABOUT>
+            
 
             </BottomBar>
 

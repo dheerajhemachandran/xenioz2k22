@@ -2,12 +2,11 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { Github } from '../components/AllSvgs';
 import { useState } from 'react';
 
 
 const Box = styled(motion.li)`
-width: 26rem;
+width: 20rem;
 height: 60vh;
 background-color: ${props => props.theme.text};
 color:${props => props.theme.body};
