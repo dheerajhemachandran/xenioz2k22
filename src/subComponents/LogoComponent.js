@@ -19,8 +19,6 @@ z-index:3;
 const LogoComponent = (props) => {
     return (
         <Logo color={props.theme}>
-          <div className="">
-          <img src={logo} height="100px" width="100px"  alt="xenioz" /></div>
         </Logo>
     )
 }
