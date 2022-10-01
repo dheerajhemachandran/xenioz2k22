@@ -2,18 +2,19 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 
-
+import principle from '../assets/Images/principle.png'
+import hod from '../assets/Images/hod.png'
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
-import astronaut from '../assets/Images/spaceman.png'
+import astronaut from '../assets/Images/rmkcet.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:200vh;
+height:300vh;
 position: relative;
 overflow: hidden;
 `
@@ -60,10 +61,12 @@ gap:4rem;`
 
 const Person=styled.div`
 display:flex;
-flex-direction:column;`
+flex-direction:column;
+align-items:center;`
 
 const Title=styled.div`
 display:flex;
+text-align:center;
 margin-top:4rem;
 justify-content:center;`
 
@@ -92,35 +95,29 @@ const AboutPage = () => {
             <People>
                 <Person>
                     <h3>principle</h3>
-                    <h4>name</h4>
-                    <img src="" height="50px" width="50px" alt="" />
+                    <h4>DR. K.RAMAR</h4>
+                    <img src={principle} height="200px" width="250px" alt="" />
                 </Person>
-                <Person>
-                    <h3>vice-principle</h3>
-                    <h4>name</h4>
-                    <img src="" height="50px" width="50px" alt="" />
-                </Person>
+                
             </People>
-            <Description>R.M.K College of Engineering and Technology (RMKCET) is situated at Puduvoyal,Gummidipoondi Taluk, Tiruvallur District,Tamilnadu. This college is affiliated to Anna University and is promoted by Lakshmikanthammal Educational Trust established in the year 1995 to render philanthropic and educational service to people living in rural areas bordering Tamilnadu and Andhra Pradesh. The lush green environment, the expansive buildings, the highly equipped laboratories with state of the art equipments and the unparalleled discipline of the students stand out as shining samples of management. This college started in the academic year 2008-09, secured Anna University 2nd rank in the very first semester and 1st rank in the very second semester. RMKCET is ranked 16th in Top 100 Private Engineering Colleges in The Higher Education Review Survey 2016 for Placements. Also Ranked 4th in Emerging Engineering Colleges in the Higher Education Review Survey 2016. Recently RMKCET Received the Bharatiya Vidya Bhavan National Award for Best Engineering College having Best Overall Performance for the year 2015 from ISTE, New Delhi.
+            <Description>The RMK group of educational institutions began their educational services in the early nineties and for the past 25 years it is their sustained hard work and dedication that has carved on niche in the field of engineering education. RMK College of Engineering and Technology was established in 2008.
 
-</Description>
+The motto of the college is very lofty. Safety and security is given top priority, then impeccable discipline. All are provided with good food, when these are made available engineering education becomes a child’s play. Teachers carefully nurture the young ones in the field of engineering and their mode of inspiring the students is available only here.
+<br/>RMK college of engineering spares no effort however tough or small it may be in elevating the educational quality, the bearing and orientation of the engineers that are molded, shaped and polished to be the young visionaries of the future of mankind.
 
-            <Title>rmkcet</Title>
+The education process is excellent and the placement is enviable. We give training in engineering skills, not only that-we have centers of excellence where the college and top notch companies give training in various fields even before they get their placement. Unmindful of the expenses involved, the management pours millions into the training and placement aspects of the students. This makes the college unique.</Description>
+
+            <Title>Department of Computer Science and Engineering</Title>
             <People>
                 <Person>
-                    <h3>principle</h3>
+                    <h3>HOD</h3>
 
-                    <h4>name</h4>
-                    <img src="" height="50px" width="50px" alt="" />
+                    <h4>DR. VALARMATHIE P</h4>
+                    <img src={hod} height="200px" width="200px" alt="" />
                 </Person>
-                <Person>
-                    <h3>vice-principle</h3>
-
-                    <h4>name</h4>
-                    <img src="" height="50px" width="50px" alt="" />
-                </Person>
+                
             </People>
-            <Description>des</Description>
+            <Description>The Department of Computer Science and Engineering was started in the academic year 2008-09 with an intake of 60 students and increased the intake to 120 students in 2012. It maintains excellent academic and Placement records since inception. Students are actively participating in five Centers of Excellence (CoE) (Big Data, Cloud, Mobility, Information Security, Front End Technologies) co-sponsored by top IT MNCs. It has State-of-Art Infrastructure and well qualified, experienced and dedicated faculty team. The students are actively involved in Co-curricular (CSI,CSEA) and Extra Curricular (Sports and Social) activities throughout the year. Our department facilitates Technology enabled learning and students are actively participating in NPTEL and Coding/ Project competitions across the country.</Description>
 
         
         </Main>

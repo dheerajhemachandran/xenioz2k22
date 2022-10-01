@@ -14,7 +14,7 @@ import BigTitle from '../subComponents/BigTitlte'
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:150vh;
+height:100vh;
 position: relative;
 display: flex;
 justify-content: space-evenly;
@@ -39,6 +39,16 @@ font-family: 'Ubuntu Mono',monospace;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+animation:popup .5s;
+
+@keyframes popup{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
 
 &:hover{
     color: ${props => props.theme.body};
@@ -83,6 +93,18 @@ ul,p{
     margin-left: 2rem;
 }
 `
+const Submain=styled.div`
+animation:show 2s;
+
+@keyframes show{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+`
 
 const MySkillsPage = () => {
     return (
@@ -103,7 +125,9 @@ R.S.M. Nagar,<br />
 Puduvoyal, Tiruvallur District,<br />
 Tamil Nadu, Pin code: 601 206.
 </Description>
+</Main>
 
+<Submain>
 <Title>
 Staff Coordinator
 </Title>
@@ -114,18 +138,20 @@ Dept. of Computer Science and Engineering<br/>
 Phone: 044-67900630<br/>
 E-mail : indracse@rmkcet.ac.in<br/>
 </Description>
+<br/>
+<br/>
 <Title>
 Student Coordinators
 </Title>
 <Description>
 President<br/>
-(M.Harish Kumar)<br/>
-mail<br/><br/>
+(Harish Kumar.R.J)<br/>
+hari19cs036@rmkcet.ac.in<br/><br/>
 Secretary<br/>
-(Dincy)<br/>
-mail<br/><br/>
+(Dincy.V.D)<br/>
+dinc19cs024@rmkcet.ac.in<br/><br/>
 </Description>
-            </Main>
+</Submain>
             
 
             <BigTitle text="SKILLS" top="80%" right="30%" />

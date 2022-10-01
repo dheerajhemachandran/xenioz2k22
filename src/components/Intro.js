@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
+import rmkcet from '../assets/Images/rmkcet.png'
 import Countdown from 'react-countdown';
-import logo from '../assets/Images/logo.png'
 
 const Box = styled(motion.div)`
 
@@ -103,7 +102,7 @@ const Intro = () => {
         animate={{opacity: 1}}
         transition={{ duration:1, delay:2 }}
                 >
-                    <img className="pic" src={Me} alt="Profile Pic" />
+                    <img className="pic" src={rmkcet} alt="Profile Pic" />
                 </motion.div>
             </SubBox>
         </Box>

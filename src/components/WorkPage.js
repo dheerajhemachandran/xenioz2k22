@@ -10,12 +10,11 @@ import PowerButton from '../subComponents/PowerButton';
 import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
 import { YinYang } from './AllSvgs';
-import BigTitlte from '../subComponents/BigTitlte';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 
-height:400vh;
+height:200vh;
 position: relative;
 display: flex;
 align-items: center;
@@ -46,8 +45,9 @@ z-index:1;
 // Framer-motion Configuration
 const container = {
 
-  hidden: {opacity:0},
+  hidden: {x:500,opacity:0},
   show: {
+    x:0,
     opacity:1,
 
     transition:{

@@ -105,7 +105,6 @@ padding:.7rem 1rem;
 text-decoration: none;
 margin-bottom:3rem;
 z-index:1;
-animation:show 3s;
 animation:ping 1.5s ease-out infinite;
 
 @keyframes ping{
@@ -119,6 +118,9 @@ animation:ping 1.5s ease-out infinite;
         border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
    }
 }
+
+
+animation:show 3s;
 @keyframes show{
     from{
         opacity:0;
@@ -157,6 +159,18 @@ justify-content: center;
 align-items: center;
 transition: all 1s ease;
 
+
+animation:show 1s;
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
+
 &>:first-child{
     animation: ${rotate} infinite 4.5s linear;
 }
@@ -187,6 +201,17 @@ gap:1.5vh;
 justify-content: center;
 align-items: center;
 transition: all 1s ease;
+
+animation:show 2s;
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
 
 `
 
@@ -219,7 +244,7 @@ const Main = () => {
                 <h1>R.M.K College of Engineering and Technology</h1>
                 <h4>(An Autonomous Institution)</h4>
                 <h3>Department of Computer Science and Engineering</h3>
-                <h1>Xenioz</h1>
+                <h1>Xenioz 2k22</h1>
             </Title>
                 
             <Center click={click}>
