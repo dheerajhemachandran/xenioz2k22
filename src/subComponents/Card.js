@@ -8,11 +8,11 @@ import { useState } from 'react';
 
 const Box = styled(motion.li)`
 width: 26rem;
-height: 50vh;
+height: 60vh;
 background-color: ${props => props.theme.text};
 color:${props => props.theme.body};
-padding: 1.5rem 2rem;
-margin-right: 8rem;
+padding:2rem;
+margin-right:8rem;
 border-radius: 0 50px 0 50px;
 display: flex;
 flex-direction: column;
@@ -72,11 +72,11 @@ ${Box}:hover &{
 
 
 const Reg = styled.a`
-background-color: ${props =>props.theme.body};
-color: ${props =>props.theme.text};
+color: ${props =>props.theme.body};
 padding:0.5rem calc(2rem + 2vw);
 font-size:calc(1em + 0.5vw);
 text-decoration:none;
+border-radius:8px;
 cursor: pointer;
 
 ${Box}:hover &{
@@ -135,15 +135,15 @@ const Card = (props) => {
                 <Image src={pics} height="280px" width="100%" alt="" />}
             
             </Tags>
-            
+            {show?
+                <Reg href={link}  target="_blank">
+                    Register
+                </Reg>:<></>}
             <Footer>
                 <Link onClick={()=>setshow(!show)}>
                     {show?"hide":"rules"}
                 </Link>
-                {show?
-                <Reg href={link}  target="_blank">
-                    Register
-                </Reg>:<></>}
+                
                 
             </Footer>
         </Box>

@@ -25,7 +25,7 @@ align-items: center;
 
 const Main = styled(motion.ul)`
 position: fixed;
-top: 12rem;
+top: 6rem;
 left:calc(10rem + 15vw);
 height: 40vh;
 display: flex;

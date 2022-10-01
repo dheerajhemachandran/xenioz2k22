@@ -8,6 +8,7 @@ import { YinYang } from './AllSvgs'
 import Intro from './Intro'
 
 
+
 const MainContainer = styled.div`
 background: ${props => props.theme.body};
 width: 100vw;
@@ -165,7 +166,7 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
             <Title click={click}>
                 <h1>R.M.K College of Engineering and Technology</h1>
-                <h4>(An Autonomous Colllege)</h4>
+                <h4>(An Autonomous Institution)</h4>
                 <h3>Department of Computer Science and Engineering</h3>
                 <p>presents...../</p>
             </Title>
@@ -241,7 +242,22 @@ const Main = () => {
                     Contact
                 </motion.h2>
             </ABOUT>
-            
+            <ABOUT to="/Contact" click={+click}>
+                <motion.h2
+                initial={{
+                    y:200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                 whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    About
+                </motion.h2>
+            </ABOUT>
 
             </BottomBar>
 
