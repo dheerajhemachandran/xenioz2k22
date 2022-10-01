@@ -12,7 +12,6 @@ export const Work = [[
         `Content, spontaneity and topicality, coordination, the attraction of the advertisement, humor, and stage presence are among the evaluation factors
         `],
         link:"https://forms.gle/C8hUL9hx1BTxvUfu5",
-        github:"https://github.com/codebucks27/Agency-website"
     },
     {
         id:2,
@@ -25,20 +24,18 @@ export const Work = [[
         `Participants are requested to bring their own laptops`],
         
         link:"https://forms.gle/i6YEySM5pcZJNQas5",
-        github:"https://github.com/codebucks27/react-job-listing-website"
-        
+      
     },
     {
         id:3,
         name:"Twixt-n-Tie (connextions)",
-        pics:"https://images.pexels.com/photos/220237/pexels-photo-220237.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        pics:"https://thumbs.dreamstime.com/b/business-collaboration-innovation-people-building-light-bulb-puzzle-pieces-vector-illustration-flat-style-white-188857473.jpg",
         tags:[`This is a group event which must contain 2 members`,
         `Overall duration of each level is 7 minutes`,
         `Priority will be given(who raises the hand first representing their team)`,
         `Each level contains 3 teams with 2 participants in a team`],
         
         link:" https://forms.gle/1vTEGYSrNkqmxvSM6",
-        github:"https://github.com/codebucks27/devto-clone"
     },
     {
         id:4,
@@ -52,8 +49,7 @@ export const Work = [[
         `],
         
         link:" https://forms.gle/So4Fv16xSb1JTFNKA",
-        github:"https://github.com/codebucks27/react-sidebar"
-       
+      
     }
     
   
@@ -62,7 +58,7 @@ export const Work = [[
     {
         id:1,
         name:"Code-n-crack (coding)        ",
-        pics:"https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        pics:"https://previews.123rf.com/images/jossdiim/jossdiim1801/jossdiim180100028/93767092-programming-and-coding-illustration-.jpg",
         tags:[`This is an individual event`,
         `There will be 2 rounds each consisting of 2 questions.`,
         `All popular programming languages such as C, C++, Python,JAVA  etc, can be used`,
@@ -72,12 +68,11 @@ export const Work = [[
         `],
         
         link:" https://forms.gle/2vS8FtyJiAjfEQC99",
-        github:"https://github.com/codebucks27/Agency-website"
     },
     {
         id:2,
         name:"Tech Explorers (Paper presentation)",
-        pics:"https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        pics:"https://png.pngitem.com/pimgs/s/145-1453266_presentation-illustrations-hd-png-download.png",
         tags:[`A maximum of 3 participants and a minimum of 1 participant are allowed`,
         `Topics related to computer science will be encouraged`,
         `An individual cannot participate in multiple presenting teams.`,
@@ -87,13 +82,12 @@ export const Work = [[
         `],
         
         link:"https://forms.gle/993uZzXELierxKAbA",
-        github:"https://github.com/codebucks27/react-job-listing-website"
-        
+      
     },
     {
         id:3,
         name:"Bug Smash (Debugging)",
-        pics:"https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        pics:"http://www.bitm.org.in/assets/img/coding.png",
         tags:[`This is an individual event`,
         `The total duration of the contest is for 20 minutes.`,
         `Along with two questions, we'll also explain what the code is supposed to accomplish`,
@@ -102,12 +96,11 @@ export const Work = [[
         `],
         
         link:"  https://forms.gle/HNeBcJ7xtFKyKLHS6",
-        github:"https://github.com/codebucks27/devto-clone"
     },
     {
         id:4,
         name:"Web Decorz(Web designing)",
-        pics:"https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        pics:"https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/09/23164055/Web-Designing-Course-Syllabus.jpg",
         tags:[`A maximum of 3 participants and a minimum of 2 participants are allowed.`,
         `A figma design and the assets used for the website design will be sent to you mail during the start of the event`,
         `Your requested to replicate the figma design by coordinating with your team`,
@@ -117,8 +110,7 @@ export const Work = [[
         `],
         
         link:"https://forms.gle/qpSkseS7tFz6oYGJ7",
-        github:"https://github.com/codebucks27/react-sidebar"
-       
+      
     }
     
   
