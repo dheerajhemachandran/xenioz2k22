@@ -108,7 +108,6 @@ const WorkPage = () => {
     <YinYang width={80} height={80} fill={DarkTheme.text} />
 </Rotate>
 
-<BigTitlte text={path} top='10%' right="20%" />
         </Box>
 
         </ThemeProvider>

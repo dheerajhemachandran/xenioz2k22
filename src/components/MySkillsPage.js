@@ -4,6 +4,7 @@ import {lightTheme} from './Themes';
 import { Design, Develope} from './AllSvgs';
 
 
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
@@ -120,27 +121,7 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 </Description>
 
             </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
-</Description>
-
-            </Main>
+            
 
             <BigTitle text="SKILLS" top="80%" right="30%" />
 

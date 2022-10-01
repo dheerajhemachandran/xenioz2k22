@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
 import Countdown from 'react-countdown';
+import logo from '../assets/Images/logo.png'
 
 const Box = styled(motion.div)`
 
@@ -59,6 +60,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 
+
 &>*:last-child{
     color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
     font-size: calc(0.5rem + 1.5vw);
@@ -89,7 +91,7 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <h1>Xenioz 2k12</h1>
+                    <h1>Xenioz 2k22</h1>
                     <h4>National Level Symposium</h4>
                     <h6>0n 17th October 2022</h6>
                     <h3><Countdown date={Date.now() + 1382400000} renderer={renderer} /></h3>
