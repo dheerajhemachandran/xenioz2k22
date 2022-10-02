@@ -4,8 +4,7 @@ import {DarkTheme} from './Themes';
 
 import principle from '../assets/Images/principle.png'
 import hod from '../assets/Images/hod.png'
-import LogoComponent from '../subComponents/LogoComponent';
-import SocialIcons from '../subComponents/SocialIcons';
+import dean from '../assets/Images/dean.png'
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
@@ -100,13 +99,13 @@ const AboutPage = () => {
             <People>
                 <Person>
                     <h3>principal</h3>
-                    <h4>DR. K.RAMAR</h4>
+                    <h4>Dr. K.RAMAR</h4>
                     <img src={principle} height="200px" width="250px" alt="" />
                 </Person>
                 <Person>
-                    <h3>principal</h3>
-                    <h4>DR. K.RAMAR</h4>
-                    <img src={principle} height="200px" width="250px" alt="" />
+                    <h3>Dean</h3>
+                    <h4></h4>
+                    <img src={dean} height="200px" width="250px" alt="" />
                 </Person>
                 
             </People>
@@ -115,14 +114,14 @@ const AboutPage = () => {
                 <Person>
                     <h3>HOD</h3>
 
-                    <h4>DR. VALARMATHIE P</h4>
+                    <h4>Ms. VALARMATHIE P</h4>
                     <img src={hod} height="200px" width="200px" alt="" />
                 </Person>
                 <Person>
                     <h3>HOD</h3>
 
-                    <h4>DR. VALARMATHIE P</h4>
-                    <img src={hod} height="200px" width="200px" alt="" />
+                    <h4>Dr.Vigilson Prem M</h4>
+                    <img src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
                 </Person>
                 
             </People>

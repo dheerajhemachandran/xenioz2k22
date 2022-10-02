@@ -25,7 +25,7 @@ z-index:3;
 
 const Line = styled(motion.span)`
 width: 2px;
-height: 8rem;
+height: 1rem;
 background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body  };
 `
 
@@ -60,7 +60,7 @@ initial={
     }
 }
 animate={{
-    height: '8rem'
+    height: '0rem'
 }}
 transition={{
     type:'spring', duration:1, delay:0.8

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import rmkcet from '../assets/Images/rmkcet.png'
+import rmkcet from '../assets/Images/profile-img.png'
 import Countdown from 'react-countdown';
 
 const Box = styled(motion.div)`
@@ -34,7 +34,24 @@ background-size: 100% 2px;
     z-index:1;
 
 `
+
 const SubBox = styled.div`
+width: 50%;
+position: relative;
+display: flex;
+z-index:2;
+
+.pic{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    height: auto;
+}
+`
+
+const SubBox2 = styled.div`
 width: 50%;
 position: relative;
 display: flex;
@@ -49,8 +66,8 @@ display: flex;
 }
 `
 const Xeniox=styled.h1`
-    color: #07fffb;
-    font-family: "Arial Black", Gadget, sans-serif;
+    color: #000ff0;
+    font-family: 'Silkscreen', cursive;
     text-shadow: 0px 0px 0 rgb(7,255,251),
                  1px 1px 0 rgb(7,255,251),
                  2px 2px 0 rgb(7,255,251),
@@ -62,13 +79,14 @@ const Xeniox=styled.h1`
                  8px 8px 7px rgba(0,0,0,0.45),
                  8px 8px 1px rgba(0,0,0,0.5),
                  0px 0px 7px rgba(0,0,0,.2);
+        width:40vw;
 `
 const Text = styled.div`
 font-size: calc(1em + 1.5vw);
 color: ${props => props.theme.body};
 padding: 2rem;
 cursor: pointer;
-font-family: 'Hachi Maru Pop', cursive;
+font-family: 'Alkalami', serif;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -109,7 +127,7 @@ const Intro = () => {
                     <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
                 </Text>
             </SubBox>
-            <SubBox>
+            <SubBox2>
                 <motion.div
                 initial={{opacity:0}}
         animate={{opacity: 1}}
@@ -117,7 +135,7 @@ const Intro = () => {
                 >
                     <img className="pic" src={rmkcet} alt="Profile Pic" />
                 </motion.div>
-            </SubBox>
+            </SubBox2>
         </Box>
     )
 }

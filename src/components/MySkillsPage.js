@@ -1,11 +1,8 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import {lightTheme} from './Themes';
-import { Design, Develope} from './AllSvgs';
 
 
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
@@ -37,8 +34,6 @@ cursor: pointer;
 
 font-family: 'Ubuntu Mono',monospace;
 display: flex;
-margin-top:25%;
-margin-bottom:auto;
 flex-direction: column;
 justify-content: space-between;
 animation:popup .5s;
@@ -130,12 +125,13 @@ Tamil Nadu, Pin code: 601 206.
 
 <Submain>
 <Title>
-Staff Coordinator
+Staff Coordinators
 </Title>
 <Description>
-Mrs.Indra Priyadharshini<br/>
-(Assistant Professor)<br/>
-Dept. of Computer Science and Engineering<br/>
+Ms.Indra J<br/>
+Dept. of Computer Science and Engineering<br/><br/>
+Jemin<br/>
+Dept. of Computer Science and Engineering<br/><br/>
 Phone: 044-67900630<br/>
 E-mail : indracse@rmkcet.ac.in<br/>
 </Description>
@@ -147,7 +143,9 @@ Student Coordinators
 <Description>
 President<br/>
 (Harish Kumar.R.J)<br/>
-hari19cs036@rmkcet.ac.in<br/><br/>
+hari19cs036@rmkcet.ac.in<br/>
+ph no: +91 8939473813<br/>
+ph no: +91 9445107427<br/><br/>
 Secretary<br/>
 (Dincy.V.D)<br/>
 dinc19cs024@rmkcet.ac.in<br/><br/>

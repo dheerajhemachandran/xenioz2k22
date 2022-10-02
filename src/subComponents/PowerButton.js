@@ -9,7 +9,7 @@ import { PowerBtn } from '../components/AllSvgs'
 const Power = styled.button`
 position: fixed;
 top: 2rem;
-left: 2rem;
+left: 4rem;
 transform: translate(-50%, 0);
 
 background-color: #FCF6F4;

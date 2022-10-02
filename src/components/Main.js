@@ -3,11 +3,10 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
-import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
-
-
+import rmk27 from '../assets/Images/rmk27.png'
+import rmk from '../assets/Images/rmkcet.png'
 
 const MainContainer = styled.div` 
 background-image: url('https://i.pinimg.com/originals/61/c3/6e/61c36e236bdcc77ab100077492bcea1b.gif');
@@ -25,21 +24,50 @@ position: relative;
 const Container = styled.div`
 `
 
-const Contact = styled(NavLink)`
-color: ${props => props.theme.text};
-background-color:#EECA2B;
-
-border-radius:5px;
-padding:.7rem 1rem;
+const Rightlogo = styled.img`
+padding:0rem;
 position: absolute;
-top: 4rem;
-right: calc(1rem + 2vw);
+top: 1.5rem;
+right: calc(2vw);
 text-decoration: none;
 z-index:1;
+
+animation:show 3s;
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
 `
+const Leftlogo = styled.img`
+padding:0rem;
+position: absolute;
+top: 1.5rem;
+left: calc(2vw);
+text-decoration: none;
+z-index:1;
+
+animation:show 3s;
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
+`
+
 const Tevent = styled(NavLink)`
-color: ${props => props.theme.text};
-background-color:#EECA2B;
+color:#fff;
+background-color:#000FF0;
 
 border-radius:5px;
 padding:.7rem 1rem;
@@ -65,8 +93,8 @@ animation:show 3s;
 const WORK = styled(NavLink)`
 border-radius:5px;
 
-color: ${props => props.theme.text};
-background-color:#EECA2B;
+color:#fff;
+background-color:#000FF0;
 
 padding:.7rem 1rem;
 position: absolute;
@@ -98,10 +126,47 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 `
+const Bus=styled.a`
+color:#fff;
+background-color:#000FF0;
+border-radius:5px;
+display:flex;
+justify-content: center;
+align-items: center;
+padding:.7rem 1rem;
+text-decoration: none;
+margin-bottom:rem;
+z-index:1;
+animation:ping 1.5s ease-out infinite;
+
+@keyframes ping{
+    0% {
+        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+    50% {
+        border: 10px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+    100% {
+        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
+   }
+}
+
+
+animation:show 3s;
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
+`
 
 const ABOUT = styled(NavLink)`
-color: ${props => props.theme.text};
-background-color:#EECA2B;
+color:#fff;
+background-color:#000FF0;
 border-radius:5px;
 display:flex;
 justify-content: center;
@@ -154,7 +219,7 @@ left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
-color:#EECA2B;
+color:#fff;
 background-color: transparent;
 cursor: pointer;
 
@@ -190,7 +255,14 @@ position: absolute;
 top: 20%  ;
 left: 15%  ;
 width:70%;
-
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+opacity:${props=>props.click?"0":"1"};
 padding:3rem 0rem;
 border: none;
 font-size:2vw;
@@ -200,15 +272,7 @@ font-size:2vw;
   }
 outline: none;
 color:#fff;
-opacity:${props => props.click ? '0' : '1'};
 text-align:center;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.29);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(12.4px);
--webkit-backdrop-filter: blur(12.4px);
-border: 1px solid rgba(255, 255, 255, 0.3);
 
 display: flex;
 flex-direction: column;
@@ -246,29 +310,15 @@ animation:ping infinite 1s;
 }`
 
 const Xeniox=styled.h1`
-color: #07fffb;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(7,255,251),
-                 1px 1px 0 rgb(7,255,251),
-                 2px 2px 0 rgb(7,255,251),
-                 3px 3px 0 rgb(7,255,251),
-                 4px 4px 0 rgb(7,255,251),
-                 5px 5px 0 rgb(7,255,251),
-                 6px 6px 0 rgb(7,255,251),
-                 7px 7px  0 rgb(7,255,251),
-                 8px 8px 7px rgba(0,0,0,0.45),
-                 8px 8px 1px rgba(0,0,0,0.5),
-                 0px 0px 7px rgba(0,0,0,.2);
-   `
+color: #FF0000;
+font-family: 'Silkscreen', cursive;
+font-size:5vh;   `
+
 
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
-background: rgba(255, 255, 255, 0.29);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(12.4px);
--webkit-backdrop-filter: blur(12.4px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+background:#ff0000;
 
 bottom: 0;
 right: 30%;
@@ -288,20 +338,27 @@ const Main = () => {
     return (
         <MainContainer>
          <DarkDiv   click={click}/>
+         <Rightlogo src={rmk27} height="100" width="100"/>
+         <Leftlogo src={rmk} height="100" width="100"/>
+           
             <Container>
-            {/* <LogoComponent theme={click ? 'dark' :'light'}/> */}
+            <LogoComponent theme={click ? 'dark' :'light'}/>
            
            <Title click={click}>
-                <h1>R.M.K College of Engineering and Technology</h1>
+            
+                <h1>R.M.K. College of Engineering and Technology</h1>
                 <h4>(An Autonomous Institution)</h4>
                 <h3>Department of Computer Science and Engineering</h3>
                 <Xeniox>Xenioz 2k22</Xeniox>
-            </Title>
+            
                 
+            </Title>
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 100} height={click ? 120 : 100} />
                 <Cspan>{click?"back":"click to view"}</Cspan>
             </Center>
+                
+            
  
 
             
@@ -356,7 +413,7 @@ const Main = () => {
                 </motion.h2>
             </ABOUT>
 
-            <ABOUT to="/Contact" click={+click}>
+            <Bus href="https://rmkcet.ac.in/busroutes.pdf" target="_blank">
                 <motion.h2
                 initial={{
                     y:200,
@@ -371,7 +428,7 @@ const Main = () => {
                 >
                     Bus Route
                 </motion.h2>
-            </ABOUT>
+            </Bus>
             
             <ABOUT to="/Contact" click={+click}>
                 <motion.h2
