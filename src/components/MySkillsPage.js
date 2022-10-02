@@ -28,7 +28,7 @@ border: 2px solid ${props => props.theme.text};
 color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
 padding: 2rem;
-width: 30vw;
+width: 50vw;
 margin:3rem;
 height: fit-content;
 z-index:3;
@@ -37,6 +37,8 @@ cursor: pointer;
 
 font-family: 'Ubuntu Mono',monospace;
 display: flex;
+margin-top:25%;
+margin-bottom:auto;
 flex-direction: column;
 justify-content: space-between;
 animation:popup .5s;
@@ -111,7 +113,6 @@ const MySkillsPage = () => {
         <ThemeProvider theme={lightTheme}>
 <Box>
 
-<LogoComponent theme='light'/>
 <SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
@@ -154,7 +155,7 @@ dinc19cs024@rmkcet.ac.in<br/><br/>
 </Submain>
             
 
-            <BigTitle text="SKILLS" top="80%" right="30%" />
+            <BigTitle text="CONTACT" top="80%" right="30%" />
 
         </Box>
 

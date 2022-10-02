@@ -48,28 +48,41 @@ display: flex;
     height: auto;
 }
 `
-
+const Xeniox=styled.h1`
+    color: #07fffb;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(7,255,251),
+                 1px 1px 0 rgb(7,255,251),
+                 2px 2px 0 rgb(7,255,251),
+                 3px 3px 0 rgb(7,255,251),
+                 4px 4px 0 rgb(7,255,251),
+                 5px 5px 0 rgb(7,255,251),
+                 6px 6px 0 rgb(7,255,251),
+                 7px 7px  0 rgb(7,255,251),
+                 8px 8px 7px rgba(0,0,0,0.45),
+                 8px 8px 1px rgba(0,0,0,0.5),
+                 0px 0px 7px rgba(0,0,0,.2);
+`
 const Text = styled.div`
 font-size: calc(1em + 1.5vw);
 color: ${props => props.theme.body};
 padding: 2rem;
 cursor: pointer;
-
+font-family: 'Hachi Maru Pop', cursive;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 
 
 &>*:last-child{
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
-    font-size: calc(0.5rem + 1.5vw);
+   font-size: calc(0.5rem + 1.5vw);
     font-weight:300;
 
 }
-
-
-
 `
+const Count=styled.h3`
+text-shadow: rgba(0,204,255,0.9) 0px 0px 39px;
+color:rgb(7,255,251);`
 
 const Intro = () => {
 
@@ -90,10 +103,10 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <h1>Xenioz 2k22</h1>
+                    <Xeniox>Xenioz 2k22</Xeniox>
                     <h4>National Level Symposium</h4>
                     <h6>0n 17th October 2022</h6>
-                    <h3><Countdown date={Date.now() + 1382400000} renderer={renderer} /></h3>
+                    <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
                 </Text>
             </SubBox>
             <SubBox>
