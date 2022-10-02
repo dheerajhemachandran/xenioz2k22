@@ -7,7 +7,6 @@ import hod from '../assets/Images/hod.png'
 import dean from '../assets/Images/dean.png'
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
-import BigTitle from '../subComponents/BigTitlte'
 import astronaut from '../assets/Images/rmkcet.png'
 
 const Box = styled.div`
@@ -42,7 +41,7 @@ const Main =  styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
-  width: 80vw;
+  width: 60vw;
   @media (max-width: 768px) {
     width:50vw;
   }

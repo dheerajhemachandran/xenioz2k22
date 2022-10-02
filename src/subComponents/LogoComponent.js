@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DarkTheme } from '../components/Themes'
 import { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 
@@ -9,7 +8,8 @@ const Logo = styled.div`
 color: #000ff0;
 position: fixed;
 left:50%;
-
+${isOpen===false?`
+transform: translate(-50%,-50%);`:""}
 
 display: flex;
 justify-content: center;
