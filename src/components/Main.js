@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const Contact = styled(NavLink)`
 color: ${props => props.theme.text};
-background-color:${props => props.theme.body };
+background-color:#EECA2B;
 
 border-radius:5px;
 padding:.7rem 1rem;
@@ -39,7 +39,7 @@ z-index:1;
 `
 const Tevent = styled(NavLink)`
 color: ${props => props.theme.text};
-background-color:${props => props.theme.body };
+background-color:#EECA2B;
 
 border-radius:5px;
 padding:.7rem 1rem;
@@ -66,7 +66,7 @@ const WORK = styled(NavLink)`
 border-radius:5px;
 
 color: ${props => props.theme.text};
-background-color:${props => props.theme.body };
+background-color:#EECA2B;
 
 padding:.7rem 1rem;
 position: absolute;
@@ -101,7 +101,7 @@ justify-content: space-evenly;
 
 const ABOUT = styled(NavLink)`
 color: ${props => props.theme.text};
-background-color:${props => props.theme.body };
+background-color:#EECA2B;
 border-radius:5px;
 display:flex;
 justify-content: center;
@@ -154,7 +154,7 @@ left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
-color:#fff;
+color:#EECA2B;
 background-color: transparent;
 cursor: pointer;
 
@@ -163,7 +163,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 transition: all 1s ease;
-
+z-index:2;
 
 animation:show 1s;
 @keyframes show{
@@ -201,13 +201,15 @@ font-size:2vw;
 outline: none;
 color:#fff;
 opacity:${props => props.click ? '0' : '1'};
-text-align:center;/* From https://css.glass */
+text-align:center;
+/* From https://css.glass */
 background: rgba(255, 255, 255, 0.29);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12.4px);
 -webkit-backdrop-filter: blur(12.4px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+
 display: flex;
 flex-direction: column;
 gap:1.5vh;
@@ -229,7 +231,7 @@ animation:show 2s;
 `
 
 const Cspan=styled.span`
-animation:ping infinite 2s;
+animation:ping infinite 1s;
 @keyframes ping{
     0%{
         opacity:0
@@ -262,10 +264,15 @@ color: #07fffb;
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
-background-color: #4B0150;
+background: rgba(255, 255, 255, 0.29);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.4px);
+-webkit-backdrop-filter: blur(12.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
 bottom: 0;
 right: 30%;
-width: ${props => props.click ? '80%' : '0%'};
+width: ${props => props.click ? '100%' : '0%'};
 height: ${props => props.click ? '100%' : '0%'};
 z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
@@ -297,23 +304,7 @@ const Main = () => {
             </Center>
  
 
-            <Contact to="/About">
-                <motion.h2
-                initial={{
-                    y:-200,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                animate={{
-                    y:0,
-                    transition: { type:'spring', duration: 1.5, delay:1}
-                }}
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-                
-                >
-                    About
-                </motion.h2>
-            </Contact>
+            
             <Tevent to="/Technical-event">
                 <motion.h2
                 initial={{
@@ -348,7 +339,7 @@ const Main = () => {
             </WORK>
             <BottomBar>
             
-            <ABOUT to="/Contact" click={+click}>
+            <ABOUT to="/About" click={+click}>
                 <motion.h2
                 initial={{
                     y:200,
@@ -361,9 +352,10 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Contact
+                    About us
                 </motion.h2>
             </ABOUT>
+
             <ABOUT to="/Contact" click={+click}>
                 <motion.h2
                 initial={{
@@ -377,9 +369,10 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Contact
+                    Bus Route
                 </motion.h2>
             </ABOUT>
+            
             <ABOUT to="/Contact" click={+click}>
                 <motion.h2
                 initial={{
@@ -393,7 +386,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Contact
+                    Contact us
                 </motion.h2>
             </ABOUT>
             

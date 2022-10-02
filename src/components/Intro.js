@@ -16,7 +16,7 @@ width: 65vw;
 height:55vh;
 display: flex;
 
-
+background:#2B63EE;
 background: linear-gradient(
     to right,
     ${props => props.theme.body} 50%,
