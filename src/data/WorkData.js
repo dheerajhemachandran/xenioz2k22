@@ -58,7 +58,7 @@ export const Work = [[
     {
         id:1,
         name:"Code-n-crack (coding)        ",
-        pics:"https://previews.123rf.com/images/jossdiim/jossdiim1801/jossdiim180100028/93767092-programming-and-coding-illustration-.jpg",
+        pics:"https://i.pinimg.com/originals/9a/68/71/9a68716efc331fcc84e3a4ce5f23d18d.png",
         tags:[`This is an individual event`,
         `There will be 2 rounds each consisting of 2 questions.`,
         `All popular programming languages such as C, C++, Python,JAVA  etc, can be used`,

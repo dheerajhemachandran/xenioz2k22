@@ -7,10 +7,9 @@ import ModalVideo from 'react-modal-video'
 
 const Logo = styled.div`
 color: #000ff0;
-position: absolute;
+position: fixed;
 left:50%;
 
-transform: translate(-50%,-50%);
 
 display: flex;
 justify-content: center;
@@ -44,7 +43,7 @@ const LogoComponent = (props) => {
 
     return (
         <Logo color={props.theme}>
-          <ModalVideo channel='youtube' height="100vh" width="100vw" autoplay isOpen={isOpen} videoId="" onClose={() => setOpen(false)} />
+          <ModalVideo channel='youtube' height="100vh" width="100vw" autoplay isOpen={isOpen} videoId="wJNikDr-aNM" onClose={() => setOpen(false)} />
 
 <Button onClick={()=> setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000ff0" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

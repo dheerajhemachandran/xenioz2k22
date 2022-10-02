@@ -42,7 +42,10 @@ const Main =  styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
-  width: 50vw;
+  width: 80vw;
+  @media (max-width: 768px) {
+    width:50vw;
+  }
   height: fit-content;
   z-index: 3;
   line-height: 1.5;
@@ -70,10 +73,10 @@ display:flex;
 flex-direction:column;
 align-items:center;`
 
-const Title=styled.div`
+const Title=styled.h3`
 display:flex;
 text-align:center;
-margin-top:4rem;
+margin:3rem auto;
 justify-content:center;`
 
 const Description=styled.div`
@@ -98,30 +101,34 @@ const AboutPage = () => {
             <Title>R.M.K College of Engineering and Technology</Title>
             <People>
                 <Person>
-                    <h3>principal</h3>
-                    <h4>Dr. K.RAMAR</h4>
                     <img src={principle} height="200px" width="250px" alt="" />
+                    <h3>Dr. K.Ramar</h3>
+                    <h4>Principal</h4>
                 </Person>
                 <Person>
-                    <h3>Dean</h3>
-                    <h4></h4>
                     <img src={dean} height="200px" width="250px" alt="" />
+                    <h3>Dr. K.Sivaram</h3>
+                    <h4>Dean-Research</h4>
                 </Person>
                 
             </People>
              <Title>Department of Computer Science and Engineering</Title>
             <People>
                 <Person>
-                    <h3>HOD</h3>
 
-                    <h4>Ms. VALARMATHIE P</h4>
                     <img src={hod} height="200px" width="200px" alt="" />
+
+                    <h3>Dr. Valarmathie.P</h3>
+
+                    <h4>HOD-CSE</h4>
                 </Person>
                 <Person>
-                    <h3>HOD</h3>
 
-                    <h4>Dr.Vigilson Prem M</h4>
                     <img src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
+                    
+                    <h3>Dr. Vigilson Prem M</h3> 
+                    
+                    <h4>Professor</h4>               
                 </Person>
                 
             </People>
@@ -129,8 +136,7 @@ const AboutPage = () => {
         
         </Main>
 
-        <BigTitle text="RMKCET" top="10%" left="5%" />
-
+        
 
         </Box>
 

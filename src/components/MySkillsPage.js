@@ -113,7 +113,7 @@ const MySkillsPage = () => {
 <ParticleComponent theme='light' />
             <Main>
 <Title>
-     venue
+     Venue
 </Title>
 <Description>
 R.M.K.College of Engineering and Technology<br />
@@ -128,12 +128,12 @@ Tamil Nadu, Pin code: 601 206.
 Staff Coordinators
 </Title>
 <Description>
-Ms.Indra J<br/>
-Dept. of Computer Science and Engineering<br/><br/>
-Jemin<br/>
-Dept. of Computer Science and Engineering<br/><br/>
+Ms.Indra G<br/>
+Asst.Professor/CSE<br/><br/>
+Mr.Jemin V.M<br/>
+Asst.Professor/CSE<br/><br/>
 Phone: 044-67900630<br/>
-E-mail : indracse@rmkcet.ac.in<br/>
+E-mail : indragcse@rmkcet.ac.in<br/>
 </Description>
 <br/>
 <br/>
@@ -141,20 +141,19 @@ E-mail : indracse@rmkcet.ac.in<br/>
 Student Coordinators
 </Title>
 <Description>
-President<br/>
-(Harish Kumar.R.J)<br/>
+<b>President</b><br/>
+Harish Kumar.R.J<br/>
 hari19cs036@rmkcet.ac.in<br/>
 ph no: +91 8939473813<br/>
 ph no: +91 9445107427<br/><br/>
-Secretary<br/>
-(Dincy.V.D)<br/>
+<b>Secretary</b> <br/>
+Dincy.V.D<br/>
 dinc19cs024@rmkcet.ac.in<br/><br/>
 </Description>
 </Submain>
             
 
-            <BigTitle text="CONTACT" top="80%" right="30%" />
-
+           
         </Box>
 
         </ThemeProvider>

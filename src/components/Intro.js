@@ -27,7 +27,7 @@ background: linear-gradient(
     ${props => props.theme.body} 50%) top;
     background-repeat: no-repeat;
 background-size: 100% 2px;
-    border-left: 2px solid ${props => props.theme.body};
+    border-left: 2px solid #fff;
     border-right: 2px solid ${props => props.theme.body};
 
 

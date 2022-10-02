@@ -9,7 +9,7 @@ import rmk27 from '../assets/Images/rmk27.png'
 import rmk from '../assets/Images/rmkcet.png'
 
 const MainContainer = styled.div` 
-background-image: url('https://i.pinimg.com/originals/61/c3/6e/61c36e236bdcc77ab100077492bcea1b.gif');
+background-image: url('https://i.gifer.com/origin/47/4705530785b66c5fcbdc84fba4315dc4.gif');
 background-position: center;
 background-size: cover;
 width: 100%;
@@ -27,8 +27,8 @@ const Container = styled.div`
 const Rightlogo = styled.img`
 padding:0rem;
 position: absolute;
-top: 1.5rem;
-right: calc(2vw);
+top: 0.5rem;
+right: calc(0vw);
 text-decoration: none;
 z-index:1;
 
@@ -66,8 +66,8 @@ animation:show 3s;
 `
 
 const Tevent = styled(NavLink)`
-color:#fff;
-background-color:#000FF0;
+color:#000;
+background-color:#00FFFF;
 
 border-radius:5px;
 padding:.7rem 1rem;
@@ -93,8 +93,8 @@ animation:show 3s;
 const WORK = styled(NavLink)`
 border-radius:5px;
 
-color:#fff;
-background-color:#000FF0;
+color:#000;
+background-color:#00FFFF;
 
 padding:.7rem 1rem;
 position: absolute;
@@ -127,13 +127,13 @@ display: flex;
 justify-content: space-evenly;
 `
 const Bus=styled.a`
-color:#fff;
-background-color:#000FF0;
+color:#000;
+background-color:#00FFFF;
 border-radius:5px;
 display:flex;
 justify-content: center;
 align-items: center;
-padding:.7rem 1rem;
+padding:.5rem .5rem;
 text-decoration: none;
 margin-bottom:rem;
 z-index:1;
@@ -165,13 +165,13 @@ animation:show 3s;
 `
 
 const ABOUT = styled(NavLink)`
-color:#fff;
-background-color:#000FF0;
+color:#000;
+background-color:#00FFFF;
 border-radius:5px;
 display:flex;
 justify-content: center;
 align-items: center;
-padding:.7rem 1rem;
+padding:.5rem .5rem;
 text-decoration: none;
 margin-bottom:rem;
 z-index:1;
@@ -214,7 +214,7 @@ to{
 
 const Center = styled.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'60%'  };
+top: ${props => props.click ? '85%' :'70%'  };
 left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
@@ -255,7 +255,6 @@ position: absolute;
 top: 20%  ;
 left: 15%  ;
 width:70%;
-/* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -310,7 +309,11 @@ animation:ping infinite 1s;
 }`
 
 const Xeniox=styled.h1`
-color: #FF0000;
+color: #00FFFF;
+font-size:4rem;
+@media (max-width: 768px) {
+    font-size: 2rem;
+  }
 font-family: 'Silkscreen', cursive;
    `
 
@@ -318,7 +321,7 @@ font-family: 'Silkscreen', cursive;
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
-background:#ff0000;
+background:#ff;
 
 bottom: 0;
 right: 30%;
@@ -338,8 +341,8 @@ const Main = () => {
     return (
         <MainContainer>
          <DarkDiv   click={click}/>
-         <Rightlogo src={rmk27} height="100" width="100"/>
-         <Leftlogo src={rmk} height="100" width="100"/>
+         <Rightlogo src={rmk27} height="180px" width="180px"/>
+         <Leftlogo src={rmk} height="120px" width="120px"/>
            
             <Container>
             <LogoComponent theme={click ? 'dark' :'light'}/>
