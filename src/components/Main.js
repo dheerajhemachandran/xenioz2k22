@@ -312,7 +312,7 @@ animation:ping infinite 1s;
 const Xeniox=styled.h1`
 color: #FF0000;
 font-family: 'Silkscreen', cursive;
-font-size:5vh;   `
+   `
 
 
 const DarkDiv = styled.div`
@@ -347,8 +347,8 @@ const Main = () => {
            <Title click={click}>
             
                 <h1>R.M.K. College of Engineering and Technology</h1>
-                <h4>(An Autonomous Institution)</h4>
-                <h3>Department of Computer Science and Engineering</h3>
+                <h2>(An Autonomous Institution)</h2>
+                <h2>Department of Computer Science and Engineering</h2>
                 <Xeniox>Xenioz 2k22</Xeniox>
             
                 
