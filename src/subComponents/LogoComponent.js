@@ -8,7 +8,8 @@ const Logo = styled.div`
 color: #000ff0;
 position: fixed;
 left:50%;
-${isOpen===false?`
+
+${props=>props.isOpen===false?`
 transform: translate(-50%,-50%);`:""}
 
 display: flex;
@@ -42,7 +43,7 @@ const LogoComponent = (props) => {
   const [isOpen, setOpen] = useState(false)
 
     return (
-        <Logo color={props.theme}>
+        <Logo isOpen={isOpen} color={props.theme}>
           <ModalVideo channel='youtube' height="100vh" width="100vw" autoplay isOpen={isOpen} videoId="wJNikDr-aNM" onClose={() => setOpen(false)} />
 
 <Button onClick={()=> setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000ff0" className="w-6 h-6">
