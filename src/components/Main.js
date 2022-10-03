@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
-import LogoComponent from '../subComponents/LogoComponent'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
+import LogoComponent from '../subComponents/LogoComponent'
 import rmk27 from '../assets/Images/rmk27.png'
 import rmk from '../assets/Images/rmkcet.png'
 
@@ -357,13 +357,14 @@ const Main = () => {
          <Leftlogo src={rmk}/>
            
             <Container>
-            {/* <LogoComponent theme={click ? 'dark' :'light'}/> */}
+            <LogoComponent theme={click ? 'dark' :'light'}/>
            
            <Title click={click}>
             
                 <h1>R.M.K. College of Engineering and Technology</h1>
                 <h2>(An Autonomous Institution)</h2>
                 <h2>Department of Computer Science and Engineering</h2>
+                <p>proudly presents</p>
                 <Xeniox>Xenioz 2k22</Xeniox>
             
                 

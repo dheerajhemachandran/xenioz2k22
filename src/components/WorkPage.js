@@ -3,8 +3,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 import {motion} from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import LogoComponent from '../subComponents/LogoComponent';
-import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 
 import { Work } from "../data/WorkData";

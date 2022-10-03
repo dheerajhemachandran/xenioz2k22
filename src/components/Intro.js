@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 import rmkcet from '../assets/Images/profile-img.png'
 import Countdown from 'react-countdown';
 
@@ -13,7 +14,7 @@ transform: translate(-50%, -50%);
 
 
 width: 65vw;
-height:55vh;
+height:100vh;
 display: flex;
 
 background:#2B63EE;
@@ -102,6 +103,45 @@ const Count=styled.h3`
 text-shadow: rgba(0,204,255,0.9) 0px 0px 39px;
 color:rgb(7,255,251);`
 
+
+const Button = styled(NavLink)`
+border-radius:5px;
+color:#000;
+background-color:#00FFFF;
+width:fit-content;
+height:50%;
+margin:2px 15px 4px 0px;
+font-size:4vw;
+@media (min-width: 768px) {
+    font-size: 2vw;
+  }
+padding:.5rem;
+text-decoration: none;
+z-index:1;
+animation:show 3s;
+
+@keyframes show{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+        
+    }
+}
+`
+const Buttonbox=styled.div`
+position: absolute;
+left: 36%;
+top: 82%;
+@media (min-width: 768px) {
+    left: 25%;
+    top: 83%;
+  }
+z-index:6;
+transform: translate(-50%, -50%);
+`
+
 const Intro = () => {
 
     const renderer = ({ days,hours, minutes, seconds, completed }) => {
@@ -114,6 +154,7 @@ const Intro = () => {
         }
       };
     return (
+        <>
         <Box
         initial={{height:0}}
         animate={{height: '55vh'}}
@@ -122,9 +163,11 @@ const Intro = () => {
             <SubBox>
                 <Text>
                     <Xeniox>Xenioz 2k22</Xeniox>
-                    <h4>National Level Technical Symposium</h4>
+                    <h4>National Level Symposium</h4>
                     <h6>0n 17th October 2022</h6>
-                    <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
+                 
+                   <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
+                
                 </Text>
             </SubBox>
             <SubBox2>
@@ -136,7 +179,14 @@ const Intro = () => {
                     <img className="pic" src={rmkcet} alt="Profile Pic" />
                 </motion.div>
             </SubBox2>
+            
         </Box>
+        {/* <Buttonbox style={{display:'flex',justifyContent:'start',alignItems:"center"}} className="">
+        <Button to="/rules">Rules</Button>
+        <Button to="/schedule">Schedule</Button>
+        
+        </Buttonbox> */}
+        </>
     )
 }
 
