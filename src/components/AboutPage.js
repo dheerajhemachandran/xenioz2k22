@@ -100,12 +100,12 @@ const AboutPage = () => {
             <Title>R.M.K College of Engineering and Technology</Title>
             <People>
                 <Person>
-                    <img src={principle} height="200px" width="250px" alt="" />
+                    <img style={{backgroundColor:"white"}} src={principle} height="200px" width="250px" alt="" />
                     <h3>Dr. K.Ramar</h3>
                     <h4>Principal</h4>
                 </Person>
                 <Person>
-                    <img src={dean} height="200px" width="250px" alt="" />
+                    <img style={{backgroundColor:"white"}} src={dean} height="200px" width="250px" alt="" />
                     <h3>Dr. K.Sivaram</h3>
                     <h4>Dean-Research</h4>
                 </Person>
@@ -115,7 +115,7 @@ const AboutPage = () => {
             <People>
                 <Person>
 
-                    <img src={hod} height="200px" width="200px" alt="" />
+                    <img style={{backgroundColor:"white"}} src={hod} height="200px" width="200px" alt="" />
 
                     <h3>Dr. Valarmathie.P</h3>
 
@@ -123,7 +123,7 @@ const AboutPage = () => {
                 </Person>
                 <Person>
 
-                    <img src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
+                    <img  src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
                     
                     <h3>Dr. Vigilson Prem M</h3> 
                     

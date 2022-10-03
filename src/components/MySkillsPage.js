@@ -128,9 +128,9 @@ Tamil Nadu, Pin code: 601 206.
 Staff Coordinators
 </Title>
 <Description>
-Ms.Indra G<br/>
+<b>Ms.Indra G</b><br/>
 Asst.Professor/CSE<br/><br/>
-Mr.Jemin V.M<br/>
+<b>Mr.Jemin V.M</b><br/>
 Asst.Professor/CSE<br/><br/>
 Phone: 044-67900630<br/>
 E-mail : indragcse@rmkcet.ac.in<br/>

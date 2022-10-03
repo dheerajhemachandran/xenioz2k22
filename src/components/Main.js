@@ -28,10 +28,16 @@ const Rightlogo = styled.img`
 padding:0rem;
 position: absolute;
 top: 0.5rem;
-right: calc(0vw);
+right: calc(-0.5vw);
 text-decoration: none;
 z-index:1;
-
+height:180px;
+width:180px;
+@media (max-width: 768px) {
+    
+height:120px;
+width:120px;
+  }
 animation:show 3s;
 
 @keyframes show{
@@ -51,7 +57,13 @@ top: 1.5rem;
 left: calc(2vw);
 text-decoration: none;
 z-index:1;
-
+height:100px;
+width:100px;
+@media (max-width: 768px) {
+    
+height:67px;
+width:67px;
+  }
 animation:show 3s;
 
 @keyframes show{
@@ -341,8 +353,8 @@ const Main = () => {
     return (
         <MainContainer>
          <DarkDiv   click={click}/>
-         <Rightlogo src={rmk27} height="180px" width="180px"/>
-         <Leftlogo src={rmk} height="120px" width="120px"/>
+         <Rightlogo src={rmk27}/>
+         <Leftlogo src={rmk}/>
            
             <Container>
             <LogoComponent theme={click ? 'dark' :'light'}/>

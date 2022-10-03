@@ -13,7 +13,7 @@ position: fixed;
 bottom: 0;
 left: 2rem;
 
-z-index:3;
+z-index:5;
 
 &>*:not(:last-child){
     margin: 0.5rem 0;
@@ -66,7 +66,7 @@ initial={
     }
 }
 animate={{
-    height: '5rem'
+    height: '3rem'
 }}
 transition={{
     type:'spring', duration:1, delay:0.8
