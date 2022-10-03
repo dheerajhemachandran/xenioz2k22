@@ -122,7 +122,7 @@ const Intro = () => {
             <SubBox>
                 <Text>
                     <Xeniox>Xenioz 2k22</Xeniox>
-                    <h4>National Level Symposium</h4>
+                    <h4>National Level Technical Symposium</h4>
                     <h6>0n 17th October 2022</h6>
                     <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
                 </Text>
