@@ -364,7 +364,7 @@ const Main = () => {
                 <h1>R.M.K. College of Engineering and Technology</h1>
                 <h2>(An Autonomous Institution)</h2>
                 <h2>Department of Computer Science and Engineering</h2>
-                <p>proudly presents</p>
+                <h3>proudly presents</h3>
                 <Xeniox>Xenioz 2k22</Xeniox>
             
                 

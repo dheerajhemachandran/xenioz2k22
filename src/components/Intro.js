@@ -143,6 +143,7 @@ transform: translate(-50%, -50%);
 `
 
 const Intro = () => {
+    var deadline = new Date("2022-10-17 00:00:00");
 
     const renderer = ({ days,hours, minutes, seconds, completed }) => {
         if (completed) {
@@ -164,9 +165,9 @@ const Intro = () => {
                 <Text>
                     <Xeniox>Xenioz 2k22</Xeniox>
                     <h4>National Level Symposium</h4>
-                    <h6>0n 17th October 2022</h6>
+                    <h6>0n 17<sup>th</sup> October 2022</h6>
                  
-                   <Count><Countdown date={Date.now() + 1382400000} renderer={renderer} /></Count>
+                   <Count><Countdown date={deadline} renderer={renderer} /></Count>
                 
                 </Text>
             </SubBox>

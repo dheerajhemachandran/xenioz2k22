@@ -8,10 +8,10 @@ const Logo = styled.div`
 color: #000ff0;
 position: fixed;
 
-${props=>props.isOpen===false?`
+${props => props.isOpen === false ? `
 
 left:50%;
-transform: translate(-50%,-50%);`:""}
+transform: translate(-50%,-50%);`: ""}
 
 display: flex;
 justify-content: center;
@@ -19,7 +19,7 @@ align-items: center;
 top:4rem;
 z-index:5;
 `
-const Button=styled.button`
+const Button = styled.button`
 width:50px;
 height:50px;
 border-radius:50%;
@@ -43,18 +43,19 @@ animation: load 1s ease-out infinite;
 const LogoComponent = (props) => {
   const [isOpen, setOpen] = useState(false)
 
-    return (
-        <Logo isOpen={isOpen} color={props.theme}>
-          <ModalVideo channel='youtube' height="100vh" width="100vw" autoplay isOpen={isOpen} videoId="OLT1fvN5kXA" onClose={() => setOpen(false)} />
+  return (
+    <Logo isOpen={isOpen} color={props.theme}>
+      <div className=""></div>
+      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="OLT1fvN5kXA" onClose={() => setOpen(false)} />
 
-<Button onClick={()=> setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000ff0" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-</svg>
-</Button>
+      <Button onClick={() => setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000ff0" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+      </svg>
+      </Button>
 
-        </Logo>
-    )
+    </Logo>
+  )
 }
 
 export default LogoComponent
