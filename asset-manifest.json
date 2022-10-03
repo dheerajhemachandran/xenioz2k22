@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/xenioz2k22/static/js/main.57d05943.js",
+    "main.js": "/xenioz2k22/static/js/main.d4deb149.js",
     "static/media/rmk27.png": "/xenioz2k22/static/media/rmk27.a1eee7f77210a9f227e2.png",
     "static/media/dean.png": "/xenioz2k22/static/media/dean.339fb7d30be4a35220cb.png",
     "static/media/principle.png": "/xenioz2k22/static/media/principle.f0e06ec075b54dba34ee.png",
@@ -8,9 +8,9 @@
     "static/media/profile-img.png": "/xenioz2k22/static/media/profile-img.5179e446ac1a570ce69b.png",
     "static/media/hod.png": "/xenioz2k22/static/media/hod.a68726737b8f2b8685c2.png",
     "index.html": "/xenioz2k22/index.html",
-    "main.57d05943.js.map": "/xenioz2k22/static/js/main.57d05943.js.map"
+    "main.d4deb149.js.map": "/xenioz2k22/static/js/main.d4deb149.js.map"
   },
   "entrypoints": [
-    "static/js/main.57d05943.js"
+    "static/js/main.d4deb149.js"
   ]
 }
