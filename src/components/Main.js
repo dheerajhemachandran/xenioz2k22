@@ -357,7 +357,7 @@ const Main = () => {
          <Leftlogo src={rmk}/>
            
             <Container>
-            <LogoComponent theme={click ? 'dark' :'light'}/>
+            {/* <LogoComponent theme={click ? 'dark' :'light'}/> */}
            
            <Title click={click}>
             

@@ -89,8 +89,8 @@ const WorkPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
 <Box>
-
-<LogoComponent theme='dark'/>
+{/* 
+<LogoComponent theme='dark'/> */}
 <PowerButton />
 
      <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
