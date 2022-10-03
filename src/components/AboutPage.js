@@ -12,7 +12,7 @@ import astronaut from '../assets/Images/rmkcet.png'
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:150vh;
+height:250vh;
 @media (max-width: 768px) {
     
     height:250vh;
