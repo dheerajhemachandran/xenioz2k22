@@ -62,6 +62,7 @@ flex-direction:column;
 
 const Person=styled.div`
 display:flex;
+
 flex-direction:column;
 align-items:center;
 margin-top:40px`
@@ -74,7 +75,7 @@ justify-content:center;`
 
 
 const Button1=styled.a`
-width:300px;
+width:250px;
 font-weight:600;
 padding:10px;
 font-size:25px;
@@ -87,9 +88,9 @@ margin:50px auto;
 text-decoration:none;
 `
 const Button2=styled.a`
-width:300px;
+width:250px;
 font-weight:600;
-padding:10px;
+padding:10px 2px;
 font-size:25px;
 border:0;
 text-align:center;
@@ -97,11 +98,17 @@ color:#000;
 background-color:white;
 border-radius:10px;
 margin:50px auto;
+
 text-decoration:none;
 `
 const Btncontainer=styled.div`
 display:flex;
 flex-direction:row;
+@media (max-width: 768px) {
+    
+   
+flex-direction:column;
+      }
 justify-content:space-between;`
 
 const AboutPage = () => {
@@ -119,12 +126,12 @@ const AboutPage = () => {
             <Title>R.M.K College of Engineering and Technology</Title>
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/rmk-chairman.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/rmk-chairman.jpg" height="200px" width="200px" alt="" />
                     <h3>Shri. R.S .Munirathinam</h3>
                     <h4>Founder-Chairman</h4>
                 </Person>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_04.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_04.jpg" height="200px" width="200px" alt="" />
                     <h3>Tmt. Manjula Munirathinam</h3>
                     <h4>Chairperson</h4>
                 </Person>
@@ -132,12 +139,12 @@ const AboutPage = () => {
             </People>
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_06.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_06.jpg" height="200px" width="200px" alt="" />
                     <h3>Thiru.R. Jothi Naidu</h3>
                     <h4>Director</h4>
                 </Person>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc.jpg" height="200px" width="200px" alt="" />
                     <h3>Thiru.R.M. Kishore </h3>
                     <h4> Vice Chairman</h4>
                 </Person>
@@ -145,12 +152,12 @@ const AboutPage = () => {
             </People>
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_03.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_03.jpg" height="200px" width="200px" alt="" />
                     <h3>Thiru.Yalamanchi Pradeep</h3>
                     <h4>Secreteray</h4>
                 </Person>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_07.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_07.jpg" height="200px" width="200px" alt="" />
                     <h3>Dr. Durga Devi Pradeep</h3>
                     <h4>Vice Chairperson</h4>
                 </Person>
@@ -158,7 +165,7 @@ const AboutPage = () => {
             </People>
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc_mam.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc_mam.jpg" height="200px" width="200px" alt="" />
                     <h3>Tmt. Sowmya Kishore</h3>
                     <h4>Trustee</h4>
                 </Person>
@@ -167,12 +174,12 @@ const AboutPage = () => {
 
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/principal_ramar2021f.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/principal_ramar2021f.jpg" height="200px" width="200px" alt="" />
                     <h3>DR. K.RAMAR  </h3>
                     <h4>Principal</h4>
                 </Person>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/deanrmkcet.jpg" height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/deanrmkcet.jpg" height="200px" width="200px" alt="" />
                     <h3>DR. K. SIVARAM </h3>
                     <h4>Dean Research </h4>
                 </Person>
@@ -183,7 +190,7 @@ const AboutPage = () => {
             <People>
                 <Person>
 
-                    <img style={{backgroundColor:"white"}} src={hod} height="350px" width="350px" alt="" />
+                    <img style={{backgroundColor:"white"}} src={hod} height="200px" width="200px" alt="" />
 
                     <h3>Dr. Valarmathie.P</h3>
 
@@ -191,7 +198,7 @@ const AboutPage = () => {
                 </Person>
                 <Person>
 
-                    <img  src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="350px" width="350px" alt="" />
+                    <img  src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
                     
                     <h3>Dr. Vigilson Prem M</h3> 
                     
