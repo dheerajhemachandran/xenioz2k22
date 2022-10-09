@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import { NavLink } from 'react-router-dom'
 import rmkcet from '../assets/Images/profile-img.png'
 import Countdown from 'react-countdown';
 
@@ -104,7 +103,7 @@ text-shadow: rgba(0,204,255,0.9) 0px 0px 39px;
 color:rgb(7,255,251);`
 
 
-const Button = styled(NavLink)`
+const Button = styled.a`
 border-radius:5px;
 color:#000;
 background-color:#00FFFF;
@@ -183,9 +182,9 @@ const Intro = () => {
             
         </Box>
         <Buttonbox style={{display:'flex',justifyContent:'start',alignItems:"center"}} className="">
-        <Button to="/rules">Rules</Button>
-        <Button to="/schedule">Schedule</Button>
-        
+        <Button href="https://drive.google.com/file/d/1kGOQ4pA5hZErhv65tlEjp_KUe-4Eic_4/view?usp=sharing" target="__blank">Rules</Button>
+        {/* <Button href="" target="__blank">Schedule</Button>
+         */}
         </Buttonbox>
         </>
     )
