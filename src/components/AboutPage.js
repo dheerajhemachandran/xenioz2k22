@@ -2,9 +2,7 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 
-import principle from '../assets/Images/principle.png'
 import hod from '../assets/Images/hod.png'
-import dean from '../assets/Images/dean.png'
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import astronaut from '../assets/Images/rmkcet.png'
@@ -12,10 +10,10 @@ import astronaut from '../assets/Images/rmkcet.png'
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
-height:250vh;
+height:700vh;
 @media (max-width: 768px) {
     
-    height:250vh;
+    height:700vh;
       }
 position: relative;
 overflow: hidden;
@@ -58,19 +56,15 @@ const Main =  styled.div`
   top: 10rem;
 `
 const People=styled.div`
-display:flex;
-flex-direction:row;
-@media (max-width: 768px) {
-    
+display:flex;   
 flex-direction:column;
-  }
-justify-content:center;
-gap:4rem;`
+  `
 
 const Person=styled.div`
 display:flex;
 flex-direction:column;
-align-items:center;`
+align-items:center;
+margin-top:40px`
 
 const Title=styled.h3`
 display:flex;
@@ -78,21 +72,46 @@ text-align:center;
 margin:3rem auto;
 justify-content:center;`
 
-const Description=styled.div`
+
+const Button1=styled.a`
+width:300px;
+font-weight:600;
+padding:10px;
+font-size:25px;
+border:0;
+text-align:center;
+color:#000;
+background-color:white;
+border-radius:10px;
+margin:50px auto;
+text-decoration:none;
+`
+const Button2=styled.a`
+width:300px;
+font-weight:600;
+padding:10px;
+font-size:25px;
+border:0;
+text-align:center;
+color:#000;
+background-color:white;
+border-radius:10px;
+margin:50px auto;
+text-decoration:none;
+`
+const Btncontainer=styled.div`
 display:flex;
-padding:3rem 1rem;
-justify-content:center`
-
-
+flex-direction:row;
+justify-content:space-between;`
 
 const AboutPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
+
 <Box>
 
 <PowerButton />
 <ParticleComponent theme='dark' />
-
         <Spaceman>
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
@@ -100,22 +119,71 @@ const AboutPage = () => {
             <Title>R.M.K College of Engineering and Technology</Title>
             <People>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src={principle} height="200px" width="250px" alt="" />
-                    <h3>Dr. K.Ramar</h3>
-                    <h4>Principal</h4>
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/rmk-chairman.jpg" height="350px" width="350px" alt="" />
+                    <h3>Shri. R.S .Munirathinam</h3>
+                    <h4>Founder-Chairman</h4>
                 </Person>
                 <Person>
-                    <img style={{backgroundColor:"white"}} src={dean} height="200px" width="250px" alt="" />
-                    <h3>Dr. K.Sivaram</h3>
-                    <h4>Dean-Research</h4>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_04.jpg" height="350px" width="350px" alt="" />
+                    <h3>Tmt. Manjula Munirathinam</h3>
+                    <h4>Chairperson</h4>
                 </Person>
                 
             </People>
+            <People>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_06.jpg" height="350px" width="350px" alt="" />
+                    <h3>Thiru.R. Jothi Naidu</h3>
+                    <h4>Director</h4>
+                </Person>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc.jpg" height="350px" width="350px" alt="" />
+                    <h3>Thiru.R.M. Kishore </h3>
+                    <h4> Vice Chairman</h4>
+                </Person>
+                
+            </People>
+            <People>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_03.jpg" height="350px" width="350px" alt="" />
+                    <h3>Thiru.Yalamanchi Pradeep</h3>
+                    <h4>Secreteray</h4>
+                </Person>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/MGT/management_07.jpg" height="350px" width="350px" alt="" />
+                    <h3>Dr. Durga Devi Pradeep</h3>
+                    <h4>Vice Chairperson</h4>
+                </Person>
+                
+            </People>
+            <People>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="http://rmkec.ac.in/abt/img/vc_mam.jpg" height="350px" width="350px" alt="" />
+                    <h3>Tmt. Sowmya Kishore</h3>
+                    <h4>Trustee</h4>
+                </Person>
+                
+            </People>
+
+            <People>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/principal_ramar2021f.jpg" height="350px" width="350px" alt="" />
+                    <h3>DR. K.RAMAR  </h3>
+                    <h4>Principal</h4>
+                </Person>
+                <Person>
+                    <img style={{backgroundColor:"white"}} src="https://rmkcet.ac.in/new_images/deanrmkcet.jpg" height="350px" width="350px" alt="" />
+                    <h3>DR. K. SIVARAM </h3>
+                    <h4>Dean Research </h4>
+                </Person>
+                
+            </People>
+            
              <Title>Department of Computer Science and Engineering</Title>
             <People>
                 <Person>
 
-                    <img style={{backgroundColor:"white"}} src={hod} height="200px" width="200px" alt="" />
+                    <img style={{backgroundColor:"white"}} src={hod} height="350px" width="350px" alt="" />
 
                     <h3>Dr. Valarmathie.P</h3>
 
@@ -123,7 +191,7 @@ const AboutPage = () => {
                 </Person>
                 <Person>
 
-                    <img  src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="200px" width="200px" alt="" />
+                    <img  src="https://rmkcet.ac.in/cse/xenoiz2k19/img/VigilsonPrem.jpg" height="350px" width="350px" alt="" />
                     
                     <h3>Dr. Vigilson Prem M</h3> 
                     
@@ -132,12 +200,17 @@ const AboutPage = () => {
                 
             </People>
             
-        
+            <Btncontainer>
+                <Button1 href="https://www.rmkcet.ac.in/cse-department.php" target="__blank">About the department</Button1>
+                <Button2 href="https://www.rmkcet.ac.in/college.php" target="__blank">About the college</Button2>
+            </Btncontainer>
         </Main>
 
         
+        
 
         </Box>
+        
 
         </ThemeProvider>
         

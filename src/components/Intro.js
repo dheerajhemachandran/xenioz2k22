@@ -182,11 +182,11 @@ const Intro = () => {
             </SubBox2>
             
         </Box>
-        {/* <Buttonbox style={{display:'flex',justifyContent:'start',alignItems:"center"}} className="">
+        <Buttonbox style={{display:'flex',justifyContent:'start',alignItems:"center"}} className="">
         <Button to="/rules">Rules</Button>
         <Button to="/schedule">Schedule</Button>
         
-        </Buttonbox> */}
+        </Buttonbox>
         </>
     )
 }

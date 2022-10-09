@@ -187,19 +187,6 @@ padding:.5rem .5rem;
 text-decoration: none;
 margin-bottom:rem;
 z-index:1;
-animation:ping 1.5s ease-out infinite;
-
-@keyframes ping{
-    0% {
-        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
-   }
-    50% {
-        border: 10px solid ${props => props.click ? props.theme.body : props.theme.text};
-   }
-    100% {
-        border: 0px solid ${props => props.click ? props.theme.body : props.theme.text};
-   }
-}
 
 
 animation:show 3s;
