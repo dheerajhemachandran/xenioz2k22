@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.js": "/xenioz2k22/static/js/main.76602e9b.js",
+    "main.js": "/xenioz2k22/static/js/main.0f1fb322.js",
     "static/media/rmk27.png": "/xenioz2k22/static/media/rmk27.a1eee7f77210a9f227e2.png",
+    "static/media/princ.png": "/xenioz2k22/static/media/princ.395a100faa6a3735c606.png",
+    "static/media/chairperson.png": "/xenioz2k22/static/media/chairperson.4b034e8e3b1438fe8f15.png",
+    "static/media/vc.png": "/xenioz2k22/static/media/vc.74339720642d7f2388bd.png",
+    "static/media/dean.png": "/xenioz2k22/static/media/dean.4fe3e25ad342f945f56c.png",
+    "static/media/jothi.png": "/xenioz2k22/static/media/jothi.6e26d4e284369accc8de.png",
+    "static/media/advisor.png": "/xenioz2k22/static/media/advisor.424fc325894b5569c5c4.png",
     "static/media/rmkcet.png": "/xenioz2k22/static/media/rmkcet.11bbc9c5d16bd9e6cb3f.png",
     "static/media/profile-img.png": "/xenioz2k22/static/media/profile-img.5179e446ac1a570ce69b.png",
     "static/media/hod.png": "/xenioz2k22/static/media/hod.a68726737b8f2b8685c2.png",
     "index.html": "/xenioz2k22/index.html",
-    "main.76602e9b.js.map": "/xenioz2k22/static/js/main.76602e9b.js.map"
+    "main.0f1fb322.js.map": "/xenioz2k22/static/js/main.0f1fb322.js.map"
   },
   "entrypoints": [
-    "static/js/main.76602e9b.js"
+    "static/js/main.0f1fb322.js"
   ]
 }
