@@ -3,7 +3,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import {lightTheme} from './Themes';
 
 
-import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 
@@ -89,67 +88,24 @@ ul,p{
     margin-left: 2rem;
 }
 `
-const Submain=styled.div`
-animation:show 2s;
 
-@keyframes show{
-    from{
-        opacity:0
-    }
-    to{
-        opacity:1
-    }
-}
-`
 
-const MySkillsPage = () => {
+const Bus = () => {
     return (
         <ThemeProvider theme={lightTheme}>
 <Box>
 
-<SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
             <Main>
 <Title>
-     Venue
+     Bus Routes
 </Title>
 <Description>
-R.M.K.College of Engineering and Technology<br />
-R.S.M. Nagar,<br />
-Puduvoyal, Tiruvallur District,<br />
-Tamil Nadu, Pin code: 601 206.
+    Will be intimated soon........./
 </Description>
 </Main>
 
-<Submain>
-<Title>
-Staff Coordinators
-</Title>
-<Description>
-<b>Ms.Indra G</b><br/>
-Asst.Professor/CSE<br/><br/>
-<b>Mr.Jemin V.M</b><br/>
-Asst.Professor/CSE<br/><br/>
-Phone: 044-67900630<br/>
-E-mail : indragcse@rmkcet.ac.in<br/>
-</Description>
-<br/>
-<br/>
-<Title>
-Student Coordinators
-</Title>
-<Description>
-<b>President</b><br/>
-Harish Kumar.R.J<br/>
-hari19cs036@rmkcet.ac.in<br/>
-ph no: +91 8939473813<br/>
-ph no: +91 9445107427<br/><br/>
-<b>Secretary</b> <br/>
-Dincy.V.D<br/>
-dinc19cs024@rmkcet.ac.in<br/><br/>
-</Description>
-</Submain>
             
 
            
@@ -160,4 +116,4 @@ dinc19cs024@rmkcet.ac.in<br/><br/>
     )
 }
 
-export default MySkillsPage
+export default Bus

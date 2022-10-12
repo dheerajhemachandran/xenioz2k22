@@ -37,20 +37,20 @@ export const Work = [[
         
         link:" https://forms.gle/1vTEGYSrNkqmxvSM6",
     },
-    {
-        id:4,
-        name:"Puzzled (rubix cube)",
-        pics:"https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        tags:[`This is an individual event`,
-        `Event category: 3X3`,
-        `The puzzle is deemed unsolved if more than one piece with a single color face is left unsolved.`,
-        `The corners of the cube are meant to be turned well if twisted will be considered as disqualified`,
-        `Cube will be provided
-        `],
+    // {
+    //     id:4,
+    //     name:"Puzzled (rubix cube)",
+    //     pics:"https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    //     tags:[`This is an individual event`,
+    //     `Event category: 3X3`,
+    //     `The puzzle is deemed unsolved if more than one piece with a single color face is left unsolved.`,
+    //     `The corners of the cube are meant to be turned well if twisted will be considered as disqualified`,
+    //     `Cube will be provided
+    //     `],
         
-        link:" https://forms.gle/So4Fv16xSb1JTFNKA",
+    //     link:" https://forms.gle/So4Fv16xSb1JTFNKA",
       
-    }
+    // }
     
   
 ] ,

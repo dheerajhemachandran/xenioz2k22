@@ -138,7 +138,7 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 `
-const Bus=styled.a`
+const Bus=styled(NavLink)`
 color:#000;
 background-color:#00FFFF;
 border-radius:5px;
@@ -416,7 +416,7 @@ const Main = () => {
                 </motion.h2>
             </ABOUT>
 
-            <Bus href="https://rmkcet.ac.in/busroutes.pdf" target="_blank">
+            <Bus to="/Bus">
                 <motion.h2
                 initial={{
                     y:200,

@@ -27,7 +27,7 @@ border: 1px solid ${props => props.theme.text};
 }
 `
 const Title = styled.h2`
-font-size: calc(1em + 0.5vw);
+font-size: 1rem;
 `
 
 const Description = styled.h2`
@@ -85,10 +85,11 @@ ${Box}:hover &{
 }
 `
 
-const reg=styled.a`
-`
+
 const Image=styled.img`
-margin:2rem auto;
+margin:1rem auto;
+height:280px;
+width:280px;
 `
 
 const Git = styled(NavLink)`

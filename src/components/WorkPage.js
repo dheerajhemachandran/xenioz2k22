@@ -20,6 +20,17 @@ align-items: center;
 
 `
 
+const Down=styled.div`
+display:flex;
+color:#fff;
+position: fixed;
+right:6rem;
+bottom: .5rem;
+width: 80px;
+height: 80px;
+z-index:1;
+`
+
 const Main = styled(motion.ul)`
 position: fixed;
 top: 6rem;
@@ -101,6 +112,11 @@ const WorkPage = () => {
               )
          }
      </Main>
+     
+     <Down>
+     scroll downwards
+     </Down>
+  
 <Rotate ref={yinyang}>
     <YinYang width={80} height={80} fill={DarkTheme.text} />
 </Rotate>
