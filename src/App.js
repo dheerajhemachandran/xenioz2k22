@@ -11,6 +11,7 @@ import Bus from './components/Bus';
 import WorkPage from './components/WorkPage';
 import MySkillsPage from './components/MySkillsPage';
 import { AnimatePresence } from "framer-motion";
+import Register from "./components/Register";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Route exact path="/Technical-event" component={WorkPage}/>
       <Route exact path="/Nontechnical-events" component={WorkPage}/>
       <Route exact path="/Contact" component={MySkillsPage}/>
+      <Route exact path="/register" component={Register}/>
 
 
     </Switch>

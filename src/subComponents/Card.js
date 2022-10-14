@@ -70,7 +70,7 @@ ${Box}:hover &{
 `
 
 
-const Reg = styled.a`
+const Reg = styled(NavLink)`
 color: ${props =>props.theme.body};
 padding:0.5rem calc(2rem + 2vw);
 font-size:calc(1em + 0.5vw);
@@ -92,16 +92,7 @@ height:280px;
 width:280px;
 `
 
-const Git = styled(NavLink)`
-color: inherit;
-text-decoration: none;
-${Box}:hover &{
-    &>*{
-        fill:${props =>props.theme.text};
-    }
-}
 
-`
 
 // Framer motion configuration
 const Item = {
@@ -119,7 +110,7 @@ const Item = {
 
 const Card = (props) => {
 
-    const {id, name, pics, tags, link, github} = props.data;
+    const {id, name, pics, tags} = props.data;
     const [show, setshow] = useState(       )
     return (
         <Box key={id} variants={Item}>
@@ -136,7 +127,7 @@ const Card = (props) => {
             
             </Tags>
             {show?
-                <Reg href={link}  target="_blank">
+                <Reg to="/register">
                     Register
                 </Reg>:<></>}
             <Footer>

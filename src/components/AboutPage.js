@@ -243,8 +243,8 @@ const AboutPage = () => {
             </People>
             
             <Btncontainer>
-                <Button1 href="https://www.rmkcet.ac.in/cse-department.php" target="__blank">About the department</Button1>
-                <Button2 href="https://www.rmkcet.ac.in/college.php" target="__blank">About the college</Button2>
+                <Button1 href="https://www.rmkcet.ac.in/cse-department.php" target="__blank">About the Department</Button1>
+                <Button2 href="https://www.rmkcet.ac.in/college.php" target="__blank">About the College</Button2>
             </Btncontainer>
         </Main>
 

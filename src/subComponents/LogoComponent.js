@@ -46,7 +46,7 @@ const LogoComponent = (props) => {
   return (
     <Logo isOpen={isOpen} color={props.theme}>
       <div className=""></div>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="OLT1fvN5kXA" onClose={() => setOpen(false)} />
+      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="fXxMfBO_RnQ" onClose={() => setOpen(false)} />
 
       <Button onClick={() => setOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000ff0" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
