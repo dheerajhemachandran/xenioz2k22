@@ -138,7 +138,7 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 `
-const Bus=styled(NavLink)`
+const Bus=styled.a`
 color:#000;
 background-color:#00FFFF;
 border-radius:5px;
@@ -416,7 +416,7 @@ const Main = () => {
                 </motion.h2>
             </ABOUT>
 
-            <Bus to="/Bus">
+            <Bus href="https://drive.google.com/file/d/12X0BawvWt4wxJ8XYx7FqmijxcbzVM--Y/view?usp=sharing" target='__blank'>
                 <motion.h2
                 initial={{
                     y:200,
